@@ -1,0 +1,7 @@
+new features (tugas skripsi): 
+1. sistem file management (docx/pdf)
+2. save and load system file
+3. main menu software
+4. draft system
+5. preview laporan
+6. export/print
