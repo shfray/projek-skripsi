@@ -1,0 +1,172 @@
+[gd_scene format=3 uid="uid://dlq6fgnm68muy"]
+
+[node name="ui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 3.0
+offset_right = 1151.0
+offset_bottom = 795.0
+
+[node name="penilaianpraktekkerja" type="Label" parent="."]
+layout_mode = 0
+offset_left = 386.0
+offset_top = 17.0
+offset_right = 801.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.00069389754, 0.00069389766, 0.0006938976, 1)
+theme_override_font_sizes/font_size = 37
+text = "Penilaian Praktek Kerja"
+
+[node name="aspekpenilaian" type="Label" parent="."]
+layout_mode = 0
+offset_left = 435.0
+offset_top = 274.0
+offset_right = 725.0
+offset_bottom = 327.0
+theme_override_colors/font_color = Color(0.033853278, 0.033853278, 0.033853274, 1)
+theme_override_font_sizes/font_size = 38
+text = "Aspek Penilaian"
+
+[node name="Input File Laporan" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 505.0
+offset_top = 575.0
+offset_right = 659.0
+offset_bottom = 622.0
+text = "Input File Laporan"
+
+[node name="Identitas_Container" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 98.0
+offset_right = 474.0
+offset_bottom = 265.0
+
+[node name="Nama_Container" type="HBoxContainer" parent="Identitas_Container"]
+layout_mode = 2
+
+[node name="LabelNama" type="Label" parent="Identitas_Container/Nama_Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+text = "Nama:"
+
+[node name="InputNama" type="TextEdit" parent="Identitas_Container/Nama_Container"]
+custom_minimum_size = Vector2(134, 48)
+layout_direction = 2
+layout_mode = 2
+text = "Nama"
+
+[node name="ID_Container" type="HBoxContainer" parent="Identitas_Container"]
+layout_mode = 2
+
+[node name="Label_Id_karyawan" type="Label" parent="Identitas_Container/ID_Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.008202022, 0.008202025, 0.008202025, 1)
+theme_override_font_sizes/font_size = 38
+text = "ID Karyawan :"
+
+[node name="Input_Id_karyawan" type="TextEdit" parent="Identitas_Container/ID_Container"]
+custom_minimum_size = Vector2(139, 0)
+layout_mode = 2
+text = "ID Karyawan"
+
+[node name="Posisi_Container" type="HBoxContainer" parent="Identitas_Container"]
+layout_mode = 2
+
+[node name="posisi2" type="Label" parent="Identitas_Container/Posisi_Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.004899827, 0.004899827, 0.004899827, 1)
+theme_override_font_sizes/font_size = 38
+text = "Posisi :"
+
+[node name="posisi" type="TextEdit" parent="Identitas_Container/Posisi_Container"]
+custom_minimum_size = Vector2(134, 0)
+layout_mode = 2
+text = "Posisi"
+
+[node name="Penilaian Container" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 86.0
+offset_top = 341.0
+offset_right = 532.0
+offset_bottom = 542.0
+
+[node name="Pemahaman_Container" type="HBoxContainer" parent="Penilaian Container"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Pemahaman Terhadap Pekerjaan" type="Label" parent="Penilaian Container/Pemahaman_Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.029506557, 0.029506557, 0.029506557, 1)
+text = "Pemahaman Terhadap Pekerjaan : "
+
+[node name="Input_Pemahaman" type="TextEdit" parent="Penilaian Container/Pemahaman_Container"]
+custom_minimum_size = Vector2(138, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Jendela Input"
+
+[node name="Tugas_Container" type="HBoxContainer" parent="Penilaian Container"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Kemampuan Menyelesaikan Tugas" type="Label" parent="Penilaian Container/Tugas_Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.0056611504, 0.0056611514, 0.00566115, 1)
+text = "Kemampuan Menyelesaikan Tugas"
+
+[node name="Jendela Input" type="TextEdit" parent="Penilaian Container/Tugas_Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Jendela Input"
+
+[node name="Keterampilan_Container" type="HBoxContainer" parent="Penilaian Container"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Keterampilan Kerja" type="Label" parent="Penilaian Container/Keterampilan_Container"]
+layout_mode = 2
+size_flags_stretch_ratio = 1.55
+theme_override_colors/font_color = Color(0.0056611504, 0.0056611514, 0.00566115, 1)
+text = "Keterampilan Kerja"
+
+[node name="Jendela Input2" type="TextEdit" parent="Penilaian Container/Keterampilan_Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Jendela Input"
+
+[node name="Disiplin_Container" type="HBoxContainer" parent="Penilaian Container"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Disiplin dan Tata Tertib" type="Label" parent="Penilaian Container/Disiplin_Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.008202022, 0.008202025, 0.008202025, 1)
+text = "Disiplin dan Tata Tertib"
+
+[node name="Jendela Input3" type="TextEdit" parent="Penilaian Container/Disiplin_Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Jendela Input"
+
+[node name="Kerjasama_Container" type="HBoxContainer" parent="Penilaian Container"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Kerja Sama Tim" type="Label" parent="Penilaian Container/Kerjasama_Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.017732391, 0.017732391, 0.01773239, 1)
+text = "Kerja Sama Tim"
+
+[node name="Jendela Input4" type="TextEdit" parent="Penilaian Container/Kerjasama_Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Jendela Input"
