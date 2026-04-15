@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b11ap61nanqq1"
+
+[deps]
+
+files=["res://csv/Demonstrasi Metode SAW Pemilihan Karyawan - Demonstrasi Metode SAW Pemilihan Karyawan.nama.translation", "res://csv/Demonstrasi Metode SAW Pemilihan Karyawan - Demonstrasi Metode SAW Pemilihan Karyawan.C1​ (Tes Tulis).translation", "res://csv/Demonstrasi Metode SAW Pemilihan Karyawan - Demonstrasi Metode SAW Pemilihan Karyawan.C2​ (Wawancara).translation", "res://csv/Demonstrasi Metode SAW Pemilihan Karyawan - Demonstrasi Metode SAW Pemilihan Karyawan.C3​ (Terlambat).translation"]
+
+source_file="res://csv/Demonstrasi Metode SAW Pemilihan Karyawan - Demonstrasi Metode SAW Pemilihan Karyawan.csv"
+dest_files=["res://csv/Demonstrasi Metode SAW Pemilihan Karyawan - Demonstrasi Metode SAW Pemilihan Karyawan.nama.translation", "res://csv/Demonstrasi Metode SAW Pemilihan Karyawan - Demonstrasi Metode SAW Pemilihan Karyawan.C1​ (Tes Tulis).translation", "res://csv/Demonstrasi Metode SAW Pemilihan Karyawan - Demonstrasi Metode SAW Pemilihan Karyawan.C2​ (Wawancara).translation", "res://csv/Demonstrasi Metode SAW Pemilihan Karyawan - Demonstrasi Metode SAW Pemilihan Karyawan.C3​ (Terlambat).translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

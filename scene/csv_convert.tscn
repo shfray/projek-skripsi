@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://be62jfarvtgod"]
+
+[ext_resource type="Script" uid="uid://jhw66od2kvcv" path="res://script/csv_convert.gd" id="1_5730f"]
+
+[node name="CsvConvert" type="Node" unique_id=439809178]
+script = ExtResource("1_5730f")
