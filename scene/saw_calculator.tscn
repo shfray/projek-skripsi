@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cpl17vkhm1uq8"]
+
+[ext_resource type="Script" uid="uid://50e0l3kpf44x" path="res://script/saw_calculator.gd" id="1_0arl0"]
+
+[node name="saw_calculator" type="Node" unique_id=329745156]
+script = ExtResource("1_0arl0")

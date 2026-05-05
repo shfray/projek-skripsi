@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CandidateData" format=3]
+
+[ext_resource type="Script" path="res://script/candidate_data.gd" id="1_a3rwr"]
+
+[resource]
+script = ExtResource("1_a3rwr")
+id = "A4"
+nama = "Toniki"
+criteria = {
+"C1​ (Tes Tulis)": 85.0,
+"C2​ (Wawancara)": 80.0,
+"C3​ (Terlambat)": 0.0,
+"C4(kerja sama)": 70.0
+}

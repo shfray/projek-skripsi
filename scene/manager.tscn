@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bhsb2i2n5jpxr"]
+
+[ext_resource type="Script" uid="uid://bbfyxkscut8ht" path="res://manager.gd" id="1_oruvd"]
+[ext_resource type="Script" uid="uid://jhw66od2kvcv" path="res://script/csv_convert.gd" id="2_elvrj"]
+[ext_resource type="Script" uid="uid://50e0l3kpf44x" path="res://script/saw_calculator.gd" id="3_exowx"]
+
+[node name="manager" type="Node" unique_id=1235308513]
+script = ExtResource("1_oruvd")
+
+[node name="CsvConverter" type="Node" parent="." unique_id=413655944]
+script = ExtResource("2_elvrj")
+metadata/_custom_type_script = "uid://jhw66od2kvcv"
+
+[node name="SawCalculator" type="Node" parent="." unique_id=2077387443]
+script = ExtResource("3_exowx")
+metadata/_custom_type_script = "uid://50e0l3kpf44x"

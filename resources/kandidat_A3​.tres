@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CandidateData" format=3]
+
+[ext_resource type="Script" path="res://script/candidate_data.gd" id="1_7f1g0"]
+
+[resource]
+script = ExtResource("1_7f1g0")
+id = "A3​"
+nama = "Cici"
+criteria = {
+"C1​ (Tes Tulis)": 75.0,
+"C2​ (Wawancara)": 85.0,
+"C3​ (Terlambat)": 1.0,
+"C4(kerja sama)": 95.0
+}
