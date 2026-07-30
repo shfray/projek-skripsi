@@ -1,0 +1,192 @@
+[gd_scene format=3 uid="uid://b6ii41h6xhmyb"]
+
+[node name="Control" type="Control" unique_id=175454936]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1871624425]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=801675671]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/HBoxContainer" unique_id=1193070390]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer" unique_id=1811810794]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.54
+
+[node name="ColorRect2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer" unique_id=577514576]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/HBoxContainer/ColorRect2" unique_id=464863590]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect2" type="ColorRect" parent="VBoxContainer/HBoxContainer/ColorRect2" unique_id=47014950]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=461672743]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 13.82
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer2" unique_id=909711034]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect" type="VBoxContainer" parent="VBoxContainer/HBoxContainer2/VBoxContainer" unique_id=894239505]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect8" type="MarginContainer" parent="VBoxContainer/HBoxContainer2/VBoxContainer/ColorRect" unique_id=271839567]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer/ColorRect" unique_id=701517352]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect2" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer/ColorRect" unique_id=1232244291]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect3" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer/ColorRect" unique_id=1264280005]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect4" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer/ColorRect" unique_id=1419955248]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect5" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer/ColorRect" unique_id=1473546407]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect6" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer/ColorRect" unique_id=1675546727]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect7" type="MarginContainer" parent="VBoxContainer/HBoxContainer2/VBoxContainer/ColorRect" unique_id=1118457580]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 7.34
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/HBoxContainer2" unique_id=1539710398]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 4.52
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer2/VBoxContainer2" unique_id=750112136]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer" unique_id=119343859]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=769961714]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=1164844994]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.37
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer/VBoxContainer/ColorRect2" unique_id=1687337743]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect2" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer/VBoxContainer/ColorRect2" unique_id=1441848400]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect3" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer/VBoxContainer/ColorRect2" unique_id=1110326442]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect4" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer/VBoxContainer/ColorRect2" unique_id=2095557769]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer2/VBoxContainer2" unique_id=159155404]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer2" unique_id=879258263]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer2/VBoxContainer" unique_id=1810730710]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer2/VBoxContainer" unique_id=1077149725]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.37
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer2/VBoxContainer/ColorRect2" unique_id=775998400]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect2" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer2/VBoxContainer/ColorRect2" unique_id=1750586613]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect3" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer2/VBoxContainer/ColorRect2" unique_id=344012246]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect4" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer2/VBoxContainer/ColorRect2" unique_id=1847599909]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer/HBoxContainer2/VBoxContainer2" unique_id=829406729]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer3" unique_id=861743275]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer3/VBoxContainer" unique_id=1094303017]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer3/VBoxContainer" unique_id=548803763]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.37
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer3/VBoxContainer/ColorRect2" unique_id=1453675434]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect2" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer3/VBoxContainer/ColorRect2" unique_id=1584921234]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect3" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer3/VBoxContainer/ColorRect2" unique_id=123656707]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect4" type="ColorRect" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer3/VBoxContainer/ColorRect2" unique_id=244983586]
+layout_mode = 2
+size_flags_horizontal = 3
