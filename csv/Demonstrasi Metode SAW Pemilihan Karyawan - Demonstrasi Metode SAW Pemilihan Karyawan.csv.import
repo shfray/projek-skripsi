@@ -15,5 +15,3 @@ dest_files=["res://csv/Demonstrasi Metode SAW Pemilihan Karyawan - Demonstrasi M
 
 compress=1
 delimiter=0
-unescape_keys=false
-unescape_translations=true
