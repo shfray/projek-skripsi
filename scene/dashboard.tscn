@@ -1,10 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://b6ii41h6xhmyb"]
+[gd_scene format=3 uid="uid://b6ii41h6xhmyb"]
 
 [ext_resource type="Script" uid="uid://casn8jnpwm0lv" path="res://script/color_rect.gd" id="1_bo221"]
 [ext_resource type="Script" uid="uid://5kdt0bmdqpnu" path="res://script/karyawan.gd" id="2_5vd6n"]
 [ext_resource type="PackedScene" uid="uid://qgocegug7pn1" path="res://scene/main_menu.tscn" id="3_mv7ns"]
 
-[node name="Control" type="Control"]
+[node name="Control" type="Control" unique_id=2078271085]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,7 +12,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=114319236]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -20,93 +20,91 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1690387486]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="ColorRect" type="Label" parent="VBoxContainer/HBoxContainer"]
+[node name="ColorRect" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=109568182]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer" unique_id=744684835]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 3.54
 
-[node name="ColorRect2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer"]
+[node name="ColorRect2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer" unique_id=2022433681]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect" type="Label" parent="VBoxContainer/HBoxContainer/ColorRect2"]
+[node name="ColorRect" type="Label" parent="VBoxContainer/HBoxContainer/ColorRect2" unique_id=360051281]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect2" type="Label" parent="VBoxContainer/HBoxContainer/ColorRect2"]
+[node name="ColorRect2" type="Label" parent="VBoxContainer/HBoxContainer/ColorRect2" unique_id=611624711]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="MainBody" type="HBoxContainer" parent="VBoxContainer"]
+[node name="MainBody" type="HBoxContainer" parent="VBoxContainer" unique_id=1622221290]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 13.82
 
-[node name="ListMenu" type="VBoxContainer" parent="VBoxContainer/MainBody"]
+[node name="ListMenu" type="VBoxContainer" parent="VBoxContainer/MainBody" unique_id=771882776]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect" type="VBoxContainer" parent="VBoxContainer/MainBody/ListMenu"]
+[node name="ColorRect" type="VBoxContainer" parent="VBoxContainer/MainBody/ListMenu" unique_id=1275823958]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="ColorRect8" type="MarginContainer" parent="VBoxContainer/MainBody/ListMenu/ColorRect"]
+[node name="ColorRect8" type="MarginContainer" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=2019642928]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="MenuUtama" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect"]
+[node name="MenuUtama" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=745824428]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Menu Utama"
 script = ExtResource("1_bo221")
 
-[node name="Karyawan" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect"]
+[node name="Karyawan" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=2109319358]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Karyawan"
 script = ExtResource("2_5vd6n")
-main_menu_scene = null
 
-[node name="Kriteria" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect"]
+[node name="Kriteria" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=1962666535]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Kriteria"
 
-[node name="HitungSAW" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect"]
+[node name="HitungSAW" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=1426667637]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Hitung SAW"
 
-[node name="Pengaturan" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect"]
+[node name="Pengaturan" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=627663689]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Laporan"
 
-[node name="ColorRect6" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect"]
+[node name="ColorRect6" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=1377785570]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Pengaturan"
 
-[node name="ColorRect7" type="MarginContainer" parent="VBoxContainer/MainBody/ListMenu/ColorRect"]
+[node name="ColorRect7" type="MarginContainer" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=2074395388]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 7.34
 
-[node name="MainDisplay" type="Control" parent="VBoxContainer/MainBody"]
+[node name="MainDisplay" type="Control" parent="VBoxContainer/MainBody" unique_id=334451096]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 4.52
 
-[node name="MainMenu" parent="VBoxContainer/MainBody/MainDisplay" instance=ExtResource("3_mv7ns")]
-layout_mode = 0
-anchors_preset = 0
+[node name="MainMenu" parent="VBoxContainer/MainBody/MainDisplay" unique_id=656932126 instance=ExtResource("3_mv7ns")]
+layout_mode = 1
 
 [connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/ColorRect/MenuUtama" to="VBoxContainer/MainBody/ListMenu/ColorRect/MenuUtama" method="_on_pressed"]
