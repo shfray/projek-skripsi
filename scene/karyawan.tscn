@@ -163,27 +163,42 @@ layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 5.18
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MainBody/ColorRect2/VBoxContainer/ColorRect" unique_id=1338348940]
+[node name="ItemList" type="ItemList" parent="MainBody/ColorRect2/VBoxContainer/ColorRect" unique_id=208116380]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="ColorRect" type="ColorRect" parent="MainBody/ColorRect2/VBoxContainer/ColorRect/VBoxContainer" unique_id=1021385154]
-layout_mode = 2
-size_flags_vertical = 3
+[node name="ColorRect" type="ColorRect" parent="MainBody/ColorRect2/VBoxContainer/ColorRect/ItemList" unique_id=349434655]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="ColorRect2" type="ColorRect" parent="MainBody/ColorRect2/VBoxContainer/ColorRect/VBoxContainer" unique_id=761910591]
-layout_mode = 2
-size_flags_vertical = 3
+[node name="ColorRect2" type="ColorRect" parent="MainBody/ColorRect2/VBoxContainer/ColorRect/ItemList" unique_id=241145758]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.23272163, 0.23272163, 0.2327216, 1)
 
-[node name="ColorRect3" type="ColorRect" parent="MainBody/ColorRect2/VBoxContainer/ColorRect/VBoxContainer" unique_id=22615897]
-layout_mode = 2
-size_flags_vertical = 3
+[node name="ColorRect3" type="ColorRect" parent="MainBody/ColorRect2/VBoxContainer/ColorRect/ItemList" unique_id=1873520171]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.14165315, 0.14165312, 0.14165315, 1)
 
-[node name="ColorRect4" type="ColorRect" parent="MainBody/ColorRect2/VBoxContainer/ColorRect/VBoxContainer" unique_id=1739022816]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="ColorRect5" type="ColorRect" parent="MainBody/ColorRect2/VBoxContainer/ColorRect/VBoxContainer" unique_id=846545423]
-layout_mode = 2
-size_flags_vertical = 3
+[node name="ColorRect4" type="ColorRect" parent="MainBody/ColorRect2/VBoxContainer/ColorRect/ItemList" unique_id=324119597]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.10747976, 0.10747973, 0.10747973, 1)
