@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://ctkmakv4mg44o" path="res://scene/karyawan.tscn" id="4_5vd6n"]
 [ext_resource type="PackedScene" uid="uid://b00sa274qoatx" path="res://scene/kriteria.tscn" id="5_mv7ns"]
 [ext_resource type="PackedScene" uid="uid://cja17b33swhpe" path="res://scene/peringkat_karyawan.tscn" id="6_hmjlp"]
+[ext_resource type="PackedScene" uid="uid://bx58cju8gknfi" path="res://scene/laporan_evaluasi.tscn" id="7_2jaex"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vd6n"]
 content_margin_left = 18.0
@@ -93,30 +94,30 @@ layout_mode = 2
 size_flags_vertical = 3
 text = "Menu Utama"
 
-[node name="Karyawan" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer" unique_id=327887385]
+[node name="ProfilKaryawan" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer" unique_id=1881145084]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Karyawan"
+text = "Profil Karyawan"
 
-[node name="Kriteria" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer" unique_id=1685724653]
+[node name="DataKaryawan" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer" unique_id=327887385]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Kriteria"
+text = "Data Karyawan"
 
 [node name="PeringkatKaryawan" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer" unique_id=1582317395]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Peringkat Karyawan"
 
+[node name="Kriteria" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer" unique_id=1685724653]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Kriteria"
+
 [node name="Laporan" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer" unique_id=983262770]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Laporan"
-
-[node name="Pengaturan" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer" unique_id=1881145084]
-layout_mode = 2
-size_flags_vertical = 3
-text = "Pengaturan"
 
 [node name="ColorRect7" type="MarginContainer" parent="VBoxContainer/MainBody/ListMenu/SideNavbar" unique_id=589982026]
 layout_mode = 2
@@ -132,14 +133,15 @@ menu_utama = ExtResource("3_mv7ns")
 menu_karyawan = ExtResource("4_5vd6n")
 menu_kriteria = ExtResource("5_mv7ns")
 menu_peringkat_karyawan = ExtResource("6_hmjlp")
+menu_laporan = ExtResource("7_2jaex")
 
 [node name="Karyawan" parent="VBoxContainer/MainBody/MainDisplay" unique_id=67440343 instance=ExtResource("4_5vd6n")]
 layout_mode = 0
 anchors_preset = 0
 
 [connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/MenuUtama" to="VBoxContainer/MainBody" method="_on_menu_utama_pressed"]
-[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/Karyawan" to="VBoxContainer/MainBody" method="_on_karyawan_pressed"]
-[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/Kriteria" to="VBoxContainer/MainBody" method="_on_kriteria_pressed"]
+[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/ProfilKaryawan" to="VBoxContainer/MainBody" method="_on_pengaturan_pressed"]
+[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/DataKaryawan" to="VBoxContainer/MainBody" method="_on_karyawan_pressed"]
 [connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/PeringkatKaryawan" to="VBoxContainer/MainBody" method="_on_hitung_saw_pressed"]
-[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/Laporan" to="VBoxContainer/MainBody" method="_on_pengaturan_pressed"]
-[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/Pengaturan" to="VBoxContainer/MainBody" method="_on_pengaturan_pressed"]
+[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/Kriteria" to="VBoxContainer/MainBody" method="_on_kriteria_pressed"]
+[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/Laporan" to="VBoxContainer/MainBody" method="_on_laporan_pressed"]

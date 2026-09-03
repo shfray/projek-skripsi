@@ -19,3 +19,7 @@ func _on_hitung_saw_pressed() -> void:
 
 func _on_pengaturan_pressed() -> void:
 		main_display.change_display(main_display.menu_pengaturan)
+
+
+func _on_laporan_pressed() -> void:
+	main_display.change_display(main_display.menu_laporan)

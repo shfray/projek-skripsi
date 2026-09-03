@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://bx58cju8gknfi"]
+
+[node name="LaporanEvaluasi" type="VBoxContainer" unique_id=398576339]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="UpperBody" type="HBoxContainer" parent="." unique_id=680852825]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.7
+
+[node name="PanelContainer" type="PanelContainer" parent="UpperBody" unique_id=1421212446]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="UpperBody/PanelContainer" unique_id=837105977]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "LAPORAN HASIL EVALUASI KARYAWAN"
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="UpperBody" unique_id=1533650222]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.54
+
+[node name="MainDisplay" type="Control" parent="." unique_id=1145361177]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.73
+
+[node name="SimpanPDF" type="HBoxContainer" parent="." unique_id=459212960]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.4
+
+[node name="MarginContainer" type="MarginContainer" parent="SimpanPDF" unique_id=727270098]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="SimpanPDF" unique_id=1579234146]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.9
+theme_override_font_sizes/font_size = 19
+text = "Simpan PDF"
+
+[node name="MarginContainer2" type="MarginContainer" parent="SimpanPDF" unique_id=954811946]
+layout_mode = 2
+size_flags_horizontal = 3
