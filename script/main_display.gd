@@ -4,7 +4,7 @@ extends Control
 @export var menu_utama: PackedScene
 @export var menu_karyawan: PackedScene
 @export var menu_kriteria: PackedScene
-@export var menu_hitung_saw: PackedScene
+@export var menu_peringkat_karyawan: PackedScene
 @export var menu_laporan: PackedScene
 @export var menu_pengaturan: PackedScene
 

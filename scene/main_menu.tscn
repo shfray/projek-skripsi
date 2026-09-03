@@ -28,102 +28,103 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1580035597]
+[node name="Summary" type="HBoxContainer" parent="." unique_id=1580035597]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=2144884094]
+[node name="VBoxContainer" type="VBoxContainer" parent="Summary" unique_id=2144884094]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=279049339]
+[node name="ColorRect" type="Label" parent="Summary/VBoxContainer" unique_id=279049339]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="ColorRect2" type="HBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=1695517217]
+[node name="ColorRect2" type="HBoxContainer" parent="Summary/VBoxContainer" unique_id=1695517217]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 5.37
 
-[node name="ColorRect" type="PanelContainer" parent="HBoxContainer/VBoxContainer/ColorRect2" unique_id=358940497]
+[node name="ColorRect" type="PanelContainer" parent="Summary/VBoxContainer/ColorRect2" unique_id=358940497]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_m4svf")
 
-[node name="ColorRect2" type="PanelContainer" parent="HBoxContainer/VBoxContainer/ColorRect2" unique_id=720349215]
+[node name="ColorRect2" type="PanelContainer" parent="Summary/VBoxContainer/ColorRect2" unique_id=720349215]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect3" type="PanelContainer" parent="HBoxContainer/VBoxContainer/ColorRect2" unique_id=1266135819]
+[node name="ColorRect3" type="PanelContainer" parent="Summary/VBoxContainer/ColorRect2" unique_id=1266135819]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect4" type="PanelContainer" parent="HBoxContainer/VBoxContainer/ColorRect2" unique_id=1578474920]
+[node name="ColorRect4" type="PanelContainer" parent="Summary/VBoxContainer/ColorRect2" unique_id=1578474920]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="." unique_id=1335842482]
+[node name="Top5PeringkatKaryawan" type="HBoxContainer" parent="." unique_id=1335842482]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer2" unique_id=1665653735]
+[node name="VBoxContainer" type="VBoxContainer" parent="Top5PeringkatKaryawan" unique_id=1665653735]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect" type="Label" parent="HBoxContainer2/VBoxContainer" unique_id=2100853022]
+[node name="ColorRect" type="Label" parent="Top5PeringkatKaryawan/VBoxContainer" unique_id=2100853022]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="ColorRect2" type="HBoxContainer" parent="HBoxContainer2/VBoxContainer" unique_id=1526294068]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 5.37
-
-[node name="ColorRect" type="PanelContainer" parent="HBoxContainer2/VBoxContainer/ColorRect2" unique_id=575105183]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="ColorRect2" type="PanelContainer" parent="HBoxContainer2/VBoxContainer/ColorRect2" unique_id=1899785068]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="ColorRect3" type="PanelContainer" parent="HBoxContainer2/VBoxContainer/ColorRect2" unique_id=1913014234]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="ColorRect4" type="PanelContainer" parent="HBoxContainer2/VBoxContainer/ColorRect2" unique_id=903882782]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="HBoxContainer3" type="HBoxContainer" parent="." unique_id=1852102650]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer3" unique_id=1291822116]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="ColorRect" type="Label" parent="HBoxContainer3/VBoxContainer" unique_id=1733992713]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="ColorRect2" type="HBoxContainer" parent="HBoxContainer3/VBoxContainer" unique_id=1886934411]
+[node name="ColorRect2" type="HBoxContainer" parent="Top5PeringkatKaryawan/VBoxContainer" unique_id=1526294068]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 5.37
 
-[node name="ColorRect" type="Button" parent="HBoxContainer3/VBoxContainer/ColorRect2" unique_id=923577017]
+[node name="ColorRect" type="PanelContainer" parent="Top5PeringkatKaryawan/VBoxContainer/ColorRect2" unique_id=575105183]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect2" type="Button" parent="HBoxContainer3/VBoxContainer/ColorRect2" unique_id=662983969]
+[node name="ColorRect2" type="PanelContainer" parent="Top5PeringkatKaryawan/VBoxContainer/ColorRect2" unique_id=1899785068]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect3" type="Button" parent="HBoxContainer3/VBoxContainer/ColorRect2" unique_id=734627996]
+[node name="ColorRect3" type="PanelContainer" parent="Top5PeringkatKaryawan/VBoxContainer/ColorRect2" unique_id=1913014234]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect4" type="Button" parent="HBoxContainer3/VBoxContainer/ColorRect2" unique_id=788882395]
+[node name="ColorRect4" type="PanelContainer" parent="Top5PeringkatKaryawan/VBoxContainer/ColorRect2" unique_id=903882782]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TombolAksi" type="HBoxContainer" parent="." unique_id=1852102650]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TombolAksi" unique_id=1291822116]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect" type="Label" parent="TombolAksi/VBoxContainer" unique_id=1733992713]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect2" type="HBoxContainer" parent="TombolAksi/VBoxContainer" unique_id=1886934411]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.37
+
+[node name="ColorRect" type="Button" parent="TombolAksi/VBoxContainer/ColorRect2" unique_id=923577017]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect2" type="Button" parent="TombolAksi/VBoxContainer/ColorRect2" unique_id=662983969]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect3" type="Button" parent="TombolAksi/VBoxContainer/ColorRect2" unique_id=734627996]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect4" type="Button" parent="TombolAksi/VBoxContainer/ColorRect2" unique_id=788882395]
 layout_mode = 2
 size_flags_horizontal = 3

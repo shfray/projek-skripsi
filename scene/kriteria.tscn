@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://b00sa274qoatx"]
+
+[node name="Kriteria" type="VBoxContainer" unique_id=272663464]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ColorRect" type="HBoxContainer" parent="." unique_id=1659259160]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="ColorRect" type="PanelContainer" parent="ColorRect" unique_id=1241717991]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ColorRect/ColorRect" unique_id=2058485298]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "KRITERIA & BOBOT PENILAIAN (SAW)"
+
+[node name="PanelContainer" type="PanelContainer" parent="ColorRect" unique_id=1509429815]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ColorRect/PanelContainer" unique_id=635993186]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Total Bobot: 100% / 1.00 (Valid)"
+
+[node name="StatistikKriteria" type="HBoxContainer" parent="." unique_id=856216729]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="PanelContainer" type="PanelContainer" parent="StatistikKriteria" unique_id=570269157]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer2" type="PanelContainer" parent="StatistikKriteria" unique_id=1811606699]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer3" type="PanelContainer" parent="StatistikKriteria" unique_id=1756398646]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TabelDataKriteria&Bobot" type="HBoxContainer" parent="." unique_id=1080932907]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.15
+
+[node name="PanelContainer" type="PanelContainer" parent="TabelDataKriteria&Bobot" unique_id=1229885535]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer2" type="PanelContainer" parent="TabelDataKriteria&Bobot" unique_id=64915321]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer3" type="PanelContainer" parent="TabelDataKriteria&Bobot" unique_id=1837820457]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer4" type="PanelContainer" parent="TabelDataKriteria&Bobot" unique_id=900929692]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer5" type="PanelContainer" parent="TabelDataKriteria&Bobot" unique_id=831755573]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer6" type="PanelContainer" parent="TabelDataKriteria&Bobot" unique_id=1212580305]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Kriteria&Bobot" type="ScrollContainer" parent="." unique_id=2048383698]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.58
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Kriteria&Bobot" unique_id=2083571460]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TombolAksi" type="HBoxContainer" parent="." unique_id=90190795]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.15
+
+[node name="TombolTambahKriteria" type="Button" parent="TombolAksi" unique_id=1952039117]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+theme_override_font_sizes/font_size = 20
+text = "Tambah Kriteria Baru"
+
+[node name="MarginContainer2" type="MarginContainer" parent="TombolAksi" unique_id=1747488072]
+layout_mode = 2
+size_flags_horizontal = 3

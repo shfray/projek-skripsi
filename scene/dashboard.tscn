@@ -4,6 +4,8 @@
 [ext_resource type="Script" uid="uid://xk8q8560m7xp" path="res://script/main_display.gd" id="2_bo221"]
 [ext_resource type="PackedScene" uid="uid://qgocegug7pn1" path="res://scene/main_menu.tscn" id="3_mv7ns"]
 [ext_resource type="PackedScene" uid="uid://ctkmakv4mg44o" path="res://scene/karyawan.tscn" id="4_5vd6n"]
+[ext_resource type="PackedScene" uid="uid://b00sa274qoatx" path="res://scene/kriteria.tscn" id="5_mv7ns"]
+[ext_resource type="PackedScene" uid="uid://cja17b33swhpe" path="res://scene/peringkat_karyawan.tscn" id="6_hmjlp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vd6n"]
 content_margin_left = 18.0
@@ -79,33 +81,39 @@ size_flags_vertical = 3
 [node name="ColorRect8" type="MarginContainer" parent="VBoxContainer/MainBody/ListMenu/SideNavbar" unique_id=1225632800]
 layout_mode = 2
 size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
 
-[node name="MenuUtama" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar" unique_id=1836734276]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/MainBody/ListMenu/SideNavbar" unique_id=743834334]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 6.66
+
+[node name="MenuUtama" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer" unique_id=1836734276]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Menu Utama"
 
-[node name="Karyawan" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar" unique_id=327887385]
+[node name="Karyawan" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer" unique_id=327887385]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Karyawan"
 
-[node name="Kriteria" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar" unique_id=1685724653]
+[node name="Kriteria" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer" unique_id=1685724653]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Kriteria"
 
-[node name="HitungSAW" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar" unique_id=1582317395]
+[node name="PeringkatKaryawan" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer" unique_id=1582317395]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Hitung SAW"
+text = "Peringkat Karyawan"
 
-[node name="Laporan" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar" unique_id=983262770]
+[node name="Laporan" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer" unique_id=983262770]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Laporan"
 
-[node name="Pengaturan" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar" unique_id=1881145084]
+[node name="Pengaturan" type="Button" parent="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer" unique_id=1881145084]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Pengaturan"
@@ -113,7 +121,7 @@ text = "Pengaturan"
 [node name="ColorRect7" type="MarginContainer" parent="VBoxContainer/MainBody/ListMenu/SideNavbar" unique_id=589982026]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 7.34
+size_flags_stretch_ratio = 0.5
 
 [node name="MainDisplay" type="Control" parent="VBoxContainer/MainBody" unique_id=1349296616]
 layout_mode = 2
@@ -122,10 +130,16 @@ size_flags_stretch_ratio = 4.52
 script = ExtResource("2_bo221")
 menu_utama = ExtResource("3_mv7ns")
 menu_karyawan = ExtResource("4_5vd6n")
+menu_kriteria = ExtResource("5_mv7ns")
+menu_peringkat_karyawan = ExtResource("6_hmjlp")
 
-[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/MenuUtama" to="VBoxContainer/MainBody" method="_on_menu_utama_pressed"]
-[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/Karyawan" to="VBoxContainer/MainBody" method="_on_karyawan_pressed"]
-[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/Kriteria" to="VBoxContainer/MainBody" method="_on_kriteria_pressed"]
-[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/HitungSAW" to="VBoxContainer/MainBody" method="_on_hitung_saw_pressed"]
-[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/Laporan" to="VBoxContainer/MainBody" method="_on_pengaturan_pressed"]
-[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/Pengaturan" to="VBoxContainer/MainBody" method="_on_pengaturan_pressed"]
+[node name="Karyawan" parent="VBoxContainer/MainBody/MainDisplay" unique_id=67440343 instance=ExtResource("4_5vd6n")]
+layout_mode = 0
+anchors_preset = 0
+
+[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/MenuUtama" to="VBoxContainer/MainBody" method="_on_menu_utama_pressed"]
+[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/Karyawan" to="VBoxContainer/MainBody" method="_on_karyawan_pressed"]
+[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/Kriteria" to="VBoxContainer/MainBody" method="_on_kriteria_pressed"]
+[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/PeringkatKaryawan" to="VBoxContainer/MainBody" method="_on_hitung_saw_pressed"]
+[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/Laporan" to="VBoxContainer/MainBody" method="_on_pengaturan_pressed"]
+[connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/Pengaturan" to="VBoxContainer/MainBody" method="_on_pengaturan_pressed"]
