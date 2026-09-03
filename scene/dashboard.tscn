@@ -5,15 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://qgocegug7pn1" path="res://scene/main_menu.tscn" id="3_mv7ns"]
 [ext_resource type="PackedScene" uid="uid://ctkmakv4mg44o" path="res://scene/karyawan.tscn" id="4_5vd6n"]
 
-<<<<<<< Updated upstream
-[node name="Control" type="Control" unique_id=2078271085]
-=======
-<<<<<<< HEAD
 [node name="Dashboard" type="Control" unique_id=2030409751]
-=======
-[node name="Control" type="Control" unique_id=2078271085]
->>>>>>> 674c80e5cafdf534e719499d74f9fb5116a5ac4c
->>>>>>> Stashed changes
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,15 +13,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-<<<<<<< Updated upstream
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=114319236]
-=======
-<<<<<<< HEAD
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1593813338]
-=======
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=114319236]
->>>>>>> 674c80e5cafdf534e719499d74f9fb5116a5ac4c
->>>>>>> Stashed changes
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -37,18 +21,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-<<<<<<< Updated upstream
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1690387486]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="ColorRect" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=109568182]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer" unique_id=744684835]
-=======
-<<<<<<< HEAD
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=2086814585]
 layout_mode = 2
 size_flags_vertical = 3
@@ -58,38 +30,10 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer" unique_id=987018856]
-=======
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1690387486]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="ColorRect" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=109568182]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer" unique_id=744684835]
->>>>>>> 674c80e5cafdf534e719499d74f9fb5116a5ac4c
->>>>>>> Stashed changes
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 3.54
 
-<<<<<<< Updated upstream
-[node name="ColorRect2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer" unique_id=2022433681]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="ColorRect" type="Label" parent="VBoxContainer/HBoxContainer/ColorRect2" unique_id=360051281]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="ColorRect2" type="Label" parent="VBoxContainer/HBoxContainer/ColorRect2" unique_id=611624711]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="MainBody" type="HBoxContainer" parent="VBoxContainer" unique_id=1622221290]
-=======
-<<<<<<< HEAD
 [node name="ColorRect2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer" unique_id=142805925]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -103,43 +47,11 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="MainBody" type="HBoxContainer" parent="VBoxContainer" unique_id=723986700]
-=======
-[node name="ColorRect2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer" unique_id=2022433681]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="ColorRect" type="Label" parent="VBoxContainer/HBoxContainer/ColorRect2" unique_id=360051281]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="ColorRect2" type="Label" parent="VBoxContainer/HBoxContainer/ColorRect2" unique_id=611624711]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="MainBody" type="HBoxContainer" parent="VBoxContainer" unique_id=1622221290]
->>>>>>> 674c80e5cafdf534e719499d74f9fb5116a5ac4c
->>>>>>> Stashed changes
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 13.82
 script = ExtResource("1_5vd6n")
 
-<<<<<<< Updated upstream
-[node name="ListMenu" type="VBoxContainer" parent="VBoxContainer/MainBody" unique_id=771882776]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="ColorRect" type="VBoxContainer" parent="VBoxContainer/MainBody/ListMenu" unique_id=1275823958]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="ColorRect8" type="MarginContainer" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=2019642928]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="MenuUtama" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=745824428]
-=======
-<<<<<<< HEAD
 [node name="ListMenu" type="VBoxContainer" parent="VBoxContainer/MainBody" unique_id=1771694723]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -153,113 +65,41 @@ layout_mode = 2
 size_flags_vertical = 3
 
 [node name="MenuUtama" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=1836734276]
-=======
-[node name="ListMenu" type="VBoxContainer" parent="VBoxContainer/MainBody" unique_id=771882776]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="ColorRect" type="VBoxContainer" parent="VBoxContainer/MainBody/ListMenu" unique_id=1275823958]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="ColorRect8" type="MarginContainer" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=2019642928]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="MenuUtama" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=745824428]
->>>>>>> 674c80e5cafdf534e719499d74f9fb5116a5ac4c
->>>>>>> Stashed changes
 layout_mode = 2
 size_flags_vertical = 3
 text = "Menu Utama"
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
 [node name="Karyawan" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=327887385]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Karyawan"
 
 [node name="Kriteria" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=1685724653]
-=======
->>>>>>> Stashed changes
-[node name="Karyawan" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=2109319358]
-layout_mode = 2
-size_flags_vertical = 3
-text = "Karyawan"
-script = ExtResource("2_5vd6n")
-
-[node name="Kriteria" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=1962666535]
-<<<<<<< Updated upstream
-=======
->>>>>>> 674c80e5cafdf534e719499d74f9fb5116a5ac4c
->>>>>>> Stashed changes
 layout_mode = 2
 size_flags_vertical = 3
 text = "Kriteria"
 
-<<<<<<< Updated upstream
-[node name="HitungSAW" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=1426667637]
-=======
-<<<<<<< HEAD
 [node name="HitungSAW" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=1582317395]
-=======
-[node name="HitungSAW" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=1426667637]
->>>>>>> 674c80e5cafdf534e719499d74f9fb5116a5ac4c
->>>>>>> Stashed changes
 layout_mode = 2
 size_flags_vertical = 3
 text = "Hitung SAW"
 
-<<<<<<< Updated upstream
-[node name="Pengaturan" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=627663689]
-=======
-<<<<<<< HEAD
 [node name="Laporan" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=983262770]
-=======
-[node name="Pengaturan" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=627663689]
->>>>>>> 674c80e5cafdf534e719499d74f9fb5116a5ac4c
->>>>>>> Stashed changes
 layout_mode = 2
 size_flags_vertical = 3
 text = "Laporan"
 
-<<<<<<< Updated upstream
-[node name="ColorRect6" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=1377785570]
-=======
-<<<<<<< HEAD
 [node name="Pengaturan" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=1881145084]
-=======
-[node name="ColorRect6" type="Button" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=1377785570]
->>>>>>> 674c80e5cafdf534e719499d74f9fb5116a5ac4c
->>>>>>> Stashed changes
 layout_mode = 2
 size_flags_vertical = 3
 text = "Pengaturan"
 
-<<<<<<< Updated upstream
-[node name="ColorRect7" type="MarginContainer" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=2074395388]
-=======
-<<<<<<< HEAD
 [node name="ColorRect7" type="MarginContainer" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=589982026]
-=======
-[node name="ColorRect7" type="MarginContainer" parent="VBoxContainer/MainBody/ListMenu/ColorRect" unique_id=2074395388]
->>>>>>> 674c80e5cafdf534e719499d74f9fb5116a5ac4c
->>>>>>> Stashed changes
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 7.34
 
-<<<<<<< Updated upstream
-[node name="MainDisplay" type="Control" parent="VBoxContainer/MainBody" unique_id=334451096]
-=======
-<<<<<<< HEAD
 [node name="MainDisplay" type="Control" parent="VBoxContainer/MainBody" unique_id=1349296616]
-=======
-[node name="MainDisplay" type="Control" parent="VBoxContainer/MainBody" unique_id=334451096]
->>>>>>> 674c80e5cafdf534e719499d74f9fb5116a5ac4c
->>>>>>> Stashed changes
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 4.52
@@ -267,15 +107,7 @@ script = ExtResource("2_bo221")
 menu_utama = ExtResource("3_mv7ns")
 menu_karyawan = ExtResource("4_5vd6n")
 
-<<<<<<< Updated upstream
-[node name="MainMenu" parent="VBoxContainer/MainBody/MainDisplay" unique_id=656932126 instance=ExtResource("3_mv7ns")]
-=======
-<<<<<<< HEAD
 [node name="MainMenu" parent="VBoxContainer/MainBody/MainDisplay" unique_id=1208886486 instance=ExtResource("3_mv7ns")]
-=======
-[node name="MainMenu" parent="VBoxContainer/MainBody/MainDisplay" unique_id=656932126 instance=ExtResource("3_mv7ns")]
->>>>>>> 674c80e5cafdf534e719499d74f9fb5116a5ac4c
->>>>>>> Stashed changes
 layout_mode = 1
 
 [connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/ColorRect/MenuUtama" to="VBoxContainer/MainBody" method="_on_menu_utama_pressed"]
