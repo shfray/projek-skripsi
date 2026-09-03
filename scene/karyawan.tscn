@@ -1,204 +1,201 @@
 [gd_scene format=3 uid="uid://ctkmakv4mg44o"]
 
+[ext_resource type="Script" uid="uid://5kdt0bmdqpnu" path="res://script/karyawan.gd" id="1_qngjj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qngjj"]
+content_margin_left = 18.0
+content_margin_top = 18.0
+content_margin_right = 18.0
+content_margin_bottom = 18.0
+bg_color = Color(0.021721022, 0.03204958, 0.04782711, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.22352941, 0.27450982, 0.34117648, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+shadow_color = Color(0, 0, 0, 0.5019608)
+shadow_size = 12
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qngjj"]
+
+[sub_resource type="Theme" id="Theme_qngjj"]
+
 [node name="Karyawan" type="VBoxContainer" unique_id=67440343]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_qngjj")
 
-[node name="UpperBody" type="HBoxContainer" parent="." unique_id=1564164122]
+[node name="PanelContainer" type="VBoxContainer" parent="." unique_id=2130815849]
+layout_mode = 2
+
+[node name="UpperBody" type="HBoxContainer" parent="PanelContainer" unique_id=1564164122]
 layout_mode = 2
 size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
 
-[node name="DataKaryawan" type="PanelContainer" parent="UpperBody" unique_id=794233987]
+[node name="DataKaryawan" type="PanelContainer" parent="PanelContainer/UpperBody" unique_id=794233987]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.68
 
-[node name="Label" type="Label" parent="UpperBody/DataKaryawan" unique_id=1229916985]
+[node name="Label" type="Label" parent="PanelContainer/UpperBody/DataKaryawan" unique_id=1229916985]
 layout_mode = 2
 text = "DATA KARYAWAN BALE CATERING"
 
-[node name="MarginContainer" type="MarginContainer" parent="UpperBody" unique_id=477096491]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/UpperBody" unique_id=477096491]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 1.44
+size_flags_stretch_ratio = 3.21
 
-[node name="SearchBox" type="TextEdit" parent="UpperBody" unique_id=579451513]
+[node name="SearchBox" type="TextEdit" parent="PanelContainer/UpperBody" unique_id=579451513]
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Cari Nama..."
 
-[node name="TambahData" type="Button" parent="UpperBody" unique_id=453696665]
+[node name="TambahData" type="Button" parent="PanelContainer/UpperBody" unique_id=453696665]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.0
 text = "Tambah Data Karyawan"
 
-[node name="MainBody" type="VBoxContainer" parent="." unique_id=694716291]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 6.5
-
-[node name="ColorRect" type="HBoxContainer" parent="MainBody" unique_id=1428593948]
+[node name="SummaryCards" type="HBoxContainer" parent="PanelContainer" unique_id=1428593948]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="TotalKaryawan" type="VBoxContainer" parent="MainBody/ColorRect" unique_id=1188169165]
+[node name="TotalKaryawan" type="VBoxContainer" parent="PanelContainer/SummaryCards" unique_id=1188169165]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="PanelContainer" type="PanelContainer" parent="MainBody/ColorRect/TotalKaryawan" unique_id=109218326]
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/SummaryCards/TotalKaryawan" unique_id=109218326]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="MainBody/ColorRect/TotalKaryawan/PanelContainer" unique_id=398899894]
+[node name="Label" type="Label" parent="PanelContainer/SummaryCards/TotalKaryawan/PanelContainer" unique_id=398899894]
 layout_mode = 2
+size_flags_vertical = 0
 text = "Total Karyawan: "
 horizontal_alignment = 1
 
-[node name="DivisiDapur" type="VBoxContainer" parent="MainBody/ColorRect" unique_id=948322936]
+[node name="DivisiDapur" type="VBoxContainer" parent="PanelContainer/SummaryCards" unique_id=948322936]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="PanelContainer" type="PanelContainer" parent="MainBody/ColorRect/DivisiDapur" unique_id=1979333626]
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/SummaryCards/DivisiDapur" unique_id=1979333626]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="MainBody/ColorRect/DivisiDapur/PanelContainer" unique_id=2140985234]
+[node name="Label" type="Label" parent="PanelContainer/SummaryCards/DivisiDapur/PanelContainer" unique_id=2140985234]
 layout_mode = 2
+size_flags_vertical = 0
 text = "Divisi Dapur: "
 horizontal_alignment = 1
 
-[node name="DivisiPelayanan" type="VBoxContainer" parent="MainBody/ColorRect" unique_id=1859541345]
+[node name="DivisiPelayanan" type="VBoxContainer" parent="PanelContainer/SummaryCards" unique_id=1859541345]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="PanelContainer" type="PanelContainer" parent="MainBody/ColorRect/DivisiPelayanan" unique_id=158351609]
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/SummaryCards/DivisiPelayanan" unique_id=158351609]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="MainBody/ColorRect/DivisiPelayanan/PanelContainer" unique_id=723275429]
+[node name="Label" type="Label" parent="PanelContainer/SummaryCards/DivisiPelayanan/PanelContainer" unique_id=723275429]
 layout_mode = 2
+size_flags_vertical = 0
 text = "Divisi Pelayanan: "
 horizontal_alignment = 1
 
-[node name="DivisiDistribusi" type="VBoxContainer" parent="MainBody/ColorRect" unique_id=296915570]
+[node name="DivisiDistribusi" type="VBoxContainer" parent="PanelContainer/SummaryCards" unique_id=296915570]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="PanelContainer" type="PanelContainer" parent="MainBody/ColorRect/DivisiDistribusi" unique_id=686730697]
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/SummaryCards/DivisiDistribusi" unique_id=686730697]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="MainBody/ColorRect/DivisiDistribusi/PanelContainer" unique_id=318935260]
+[node name="Label" type="Label" parent="PanelContainer/SummaryCards/DivisiDistribusi/PanelContainer" unique_id=318935260]
 layout_mode = 2
 text = "Divisi Distribusi: "
 horizontal_alignment = 1
 
-[node name="ColorRect2" type="Control" parent="MainBody" unique_id=929407234]
+[node name="MainBody" type="PanelContainer" parent="." unique_id=157416151]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 3.86
+size_flags_stretch_ratio = 14.74
+theme_override_styles/panel = SubResource("StyleBoxFlat_qngjj")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MainBody/ColorRect2" unique_id=726232035]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="MainBody/ColorRect2/VBoxContainer" unique_id=1271412893]
+[node name="VBoxContainer" type="VBoxContainer" parent="MainBody" unique_id=683784315]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 
-[node name="PanelContainer" type="PanelContainer" parent="MainBody/ColorRect2/VBoxContainer/HBoxContainer" unique_id=1012654061]
+[node name="TableHeader" type="HBoxContainer" parent="MainBody/VBoxContainer" unique_id=1271412893]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ID" type="Label" parent="MainBody/ColorRect2/VBoxContainer/HBoxContainer/PanelContainer" unique_id=256075406]
+[node name="PanelContainer" type="PanelContainer" parent="MainBody/VBoxContainer/TableHeader" unique_id=1012654061]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_qngjj")
+
+[node name="ID" type="Label" parent="MainBody/VBoxContainer/TableHeader/PanelContainer" unique_id=256075406]
 layout_mode = 2
 text = "ID"
 horizontal_alignment = 1
 
-[node name="PanelContainer2" type="PanelContainer" parent="MainBody/ColorRect2/VBoxContainer/HBoxContainer" unique_id=698909808]
+[node name="PanelContainer2" type="PanelContainer" parent="MainBody/VBoxContainer/TableHeader" unique_id=698909808]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_qngjj")
 
-[node name="NamaKaryawan" type="Label" parent="MainBody/ColorRect2/VBoxContainer/HBoxContainer/PanelContainer2" unique_id=666593515]
+[node name="NamaKaryawan" type="Label" parent="MainBody/VBoxContainer/TableHeader/PanelContainer2" unique_id=666593515]
 layout_mode = 2
 text = "Nama Karyawan"
 horizontal_alignment = 1
 
-[node name="PanelContainer3" type="PanelContainer" parent="MainBody/ColorRect2/VBoxContainer/HBoxContainer" unique_id=43614334]
+[node name="PanelContainer3" type="PanelContainer" parent="MainBody/VBoxContainer/TableHeader" unique_id=43614334]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_qngjj")
 
-[node name="DivisiDapur" type="Label" parent="MainBody/ColorRect2/VBoxContainer/HBoxContainer/PanelContainer3" unique_id=1990043500]
+[node name="DivisiDapur" type="Label" parent="MainBody/VBoxContainer/TableHeader/PanelContainer3" unique_id=1990043500]
 layout_mode = 2
 text = "Divisi Dapur"
 horizontal_alignment = 1
 
-[node name="PanelContainer4" type="PanelContainer" parent="MainBody/ColorRect2/VBoxContainer/HBoxContainer" unique_id=2042652553]
+[node name="PanelContainer4" type="PanelContainer" parent="MainBody/VBoxContainer/TableHeader" unique_id=2042652553]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_qngjj")
 
-[node name="DivisiPelayanan" type="Label" parent="MainBody/ColorRect2/VBoxContainer/HBoxContainer/PanelContainer4" unique_id=2001586536]
+[node name="DivisiPelayanan" type="Label" parent="MainBody/VBoxContainer/TableHeader/PanelContainer4" unique_id=2001586536]
 layout_mode = 2
 text = "Divisi Pelayanan"
 horizontal_alignment = 1
 
-[node name="PanelContainer5" type="PanelContainer" parent="MainBody/ColorRect2/VBoxContainer/HBoxContainer" unique_id=1965337466]
+[node name="PanelContainer5" type="PanelContainer" parent="MainBody/VBoxContainer/TableHeader" unique_id=1965337466]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_qngjj")
 
-[node name="DivisiDistribusi" type="Label" parent="MainBody/ColorRect2/VBoxContainer/HBoxContainer/PanelContainer5" unique_id=1180816344]
+[node name="DivisiDistribusi" type="Label" parent="MainBody/VBoxContainer/TableHeader/PanelContainer5" unique_id=1180816344]
 layout_mode = 2
 text = "Divisi Distribusi"
 horizontal_alignment = 1
 
-[node name="ColorRect" type="ScrollContainer" parent="MainBody/ColorRect2/VBoxContainer" unique_id=1753150777]
+[node name="TableScroll" type="ScrollContainer" parent="MainBody/VBoxContainer" unique_id=1753150777]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 5.18
+size_flags_stretch_ratio = 5.44
 
-[node name="ItemList" type="ItemList" parent="MainBody/ColorRect2/VBoxContainer/ColorRect" unique_id=208116380]
+[node name="TableRows" type="VBoxContainer" parent="MainBody/VBoxContainer/TableScroll" unique_id=208116380]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-
-[node name="ColorRect" type="ColorRect" parent="MainBody/ColorRect2/VBoxContainer/ColorRect/ItemList" unique_id=349434655]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="ColorRect2" type="ColorRect" parent="MainBody/ColorRect2/VBoxContainer/ColorRect/ItemList" unique_id=241145758]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.23272163, 0.23272163, 0.2327216, 1)
-
-[node name="ColorRect3" type="ColorRect" parent="MainBody/ColorRect2/VBoxContainer/ColorRect/ItemList" unique_id=1873520171]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.14165315, 0.14165312, 0.14165315, 1)
-
-[node name="ColorRect4" type="ColorRect" parent="MainBody/ColorRect2/VBoxContainer/ColorRect/ItemList" unique_id=324119597]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.10747976, 0.10747973, 0.10747973, 1)
+theme = SubResource("Theme_qngjj")

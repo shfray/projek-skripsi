@@ -1,107 +1,129 @@
 [gd_scene format=3 uid="uid://qgocegug7pn1"]
 
-[node name="MainMenu" type="VBoxContainer"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m4svf"]
+content_margin_left = 18.0
+content_margin_top = 18.0
+content_margin_right = 18.0
+content_margin_bottom = 18.0
+bg_color = Color(0.1254902, 0.15686275, 0.19607843, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.22352941, 0.27450982, 0.34117648, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+shadow_color = Color(0, 0, 0, 0.5019608)
+shadow_size = 12
+shadow_offset = Vector2(0, 4)
+
+[node name="MainMenu" type="VBoxContainer" unique_id=822076232]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1580035597]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=2144884094]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect" type="Label" parent="HBoxContainer/VBoxContainer"]
+[node name="ColorRect" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=279049339]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="ColorRect2" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 5.37
-
-[node name="ColorRect" type="ColorRect" parent="HBoxContainer/VBoxContainer/ColorRect2"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="ColorRect2" type="ColorRect" parent="HBoxContainer/VBoxContainer/ColorRect2"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="ColorRect3" type="ColorRect" parent="HBoxContainer/VBoxContainer/ColorRect2"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="ColorRect4" type="ColorRect" parent="HBoxContainer/VBoxContainer/ColorRect2"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="."]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer2"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="ColorRect" type="Label" parent="HBoxContainer2/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="ColorRect2" type="HBoxContainer" parent="HBoxContainer2/VBoxContainer"]
+[node name="ColorRect2" type="HBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=1695517217]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 5.37
 
-[node name="ColorRect" type="ColorRect" parent="HBoxContainer2/VBoxContainer/ColorRect2"]
+[node name="ColorRect" type="PanelContainer" parent="HBoxContainer/VBoxContainer/ColorRect2" unique_id=358940497]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_m4svf")
+
+[node name="ColorRect2" type="PanelContainer" parent="HBoxContainer/VBoxContainer/ColorRect2" unique_id=720349215]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect2" type="ColorRect" parent="HBoxContainer2/VBoxContainer/ColorRect2"]
+[node name="ColorRect3" type="PanelContainer" parent="HBoxContainer/VBoxContainer/ColorRect2" unique_id=1266135819]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect3" type="ColorRect" parent="HBoxContainer2/VBoxContainer/ColorRect2"]
+[node name="ColorRect4" type="PanelContainer" parent="HBoxContainer/VBoxContainer/ColorRect2" unique_id=1578474920]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect4" type="ColorRect" parent="HBoxContainer2/VBoxContainer/ColorRect2"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="HBoxContainer3" type="HBoxContainer" parent="."]
+[node name="HBoxContainer2" type="HBoxContainer" parent="." unique_id=1335842482]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer3"]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer2" unique_id=1665653735]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect" type="Label" parent="HBoxContainer3/VBoxContainer"]
+[node name="ColorRect" type="Label" parent="HBoxContainer2/VBoxContainer" unique_id=2100853022]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="ColorRect2" type="HBoxContainer" parent="HBoxContainer3/VBoxContainer"]
+[node name="ColorRect2" type="HBoxContainer" parent="HBoxContainer2/VBoxContainer" unique_id=1526294068]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 5.37
 
-[node name="ColorRect" type="Button" parent="HBoxContainer3/VBoxContainer/ColorRect2"]
+[node name="ColorRect" type="PanelContainer" parent="HBoxContainer2/VBoxContainer/ColorRect2" unique_id=575105183]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect2" type="Button" parent="HBoxContainer3/VBoxContainer/ColorRect2"]
+[node name="ColorRect2" type="PanelContainer" parent="HBoxContainer2/VBoxContainer/ColorRect2" unique_id=1899785068]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect3" type="Button" parent="HBoxContainer3/VBoxContainer/ColorRect2"]
+[node name="ColorRect3" type="PanelContainer" parent="HBoxContainer2/VBoxContainer/ColorRect2" unique_id=1913014234]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ColorRect4" type="Button" parent="HBoxContainer3/VBoxContainer/ColorRect2"]
+[node name="ColorRect4" type="PanelContainer" parent="HBoxContainer2/VBoxContainer/ColorRect2" unique_id=903882782]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="." unique_id=1852102650]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer3" unique_id=1291822116]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect" type="Label" parent="HBoxContainer3/VBoxContainer" unique_id=1733992713]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect2" type="HBoxContainer" parent="HBoxContainer3/VBoxContainer" unique_id=1886934411]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.37
+
+[node name="ColorRect" type="Button" parent="HBoxContainer3/VBoxContainer/ColorRect2" unique_id=923577017]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect2" type="Button" parent="HBoxContainer3/VBoxContainer/ColorRect2" unique_id=662983969]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect3" type="Button" parent="HBoxContainer3/VBoxContainer/ColorRect2" unique_id=734627996]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect4" type="Button" parent="HBoxContainer3/VBoxContainer/ColorRect2" unique_id=788882395]
 layout_mode = 2
 size_flags_horizontal = 3

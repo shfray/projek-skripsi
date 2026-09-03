@@ -5,12 +5,32 @@
 [ext_resource type="PackedScene" uid="uid://qgocegug7pn1" path="res://scene/main_menu.tscn" id="3_mv7ns"]
 [ext_resource type="PackedScene" uid="uid://ctkmakv4mg44o" path="res://scene/karyawan.tscn" id="4_5vd6n"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vd6n"]
+content_margin_left = 18.0
+content_margin_top = 18.0
+content_margin_right = 18.0
+content_margin_bottom = 18.0
+bg_color = Color(0.1254902, 0.15686275, 0.19607843, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.22352941, 0.27450982, 0.34117648, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+shadow_color = Color(0, 0, 0, 0.5019608)
+shadow_size = 1
+shadow_offset = Vector2(0, 4)
+
 [node name="Dashboard" type="PanelContainer" unique_id=143039038]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5vd6n")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1593813338]
 layout_mode = 2
@@ -102,9 +122,6 @@ size_flags_stretch_ratio = 4.52
 script = ExtResource("2_bo221")
 menu_utama = ExtResource("3_mv7ns")
 menu_karyawan = ExtResource("4_5vd6n")
-
-[node name="MainMenu" parent="VBoxContainer/MainBody/MainDisplay" unique_id=1208886486 instance=ExtResource("3_mv7ns")]
-layout_mode = 1
 
 [connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/MenuUtama" to="VBoxContainer/MainBody" method="_on_menu_utama_pressed"]
 [connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/Karyawan" to="VBoxContainer/MainBody" method="_on_karyawan_pressed"]
