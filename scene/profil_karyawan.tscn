@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://34mdh4i7s2g7"]
+
+[node name="ProfilKaryawan" type="Control" unique_id=1148072791]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

@@ -1733,92 +1733,15 @@ shadow_offset = Vector2(0, 4)
 
 [sub_resource type="ImageTexture" id="ImageTexture_ekyqj"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nqoto"]
-content_margin_left = 8.0
-content_margin_top = 8.0
-content_margin_right = 8.0
-content_margin_bottom = 8.0
-bg_color = Color(0.33333334, 0.39607844, 0.4745098, 1)
-border_color = Color(0.33333334, 0.39607844, 0.4745098, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-shadow_color = Color(1, 1, 1, 0)
-shadow_offset = Vector2(0, 4)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4rfoy"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vm1by"]
-content_margin_left = 8.0
-content_margin_top = 8.0
-content_margin_right = 8.0
-content_margin_bottom = 8.0
-bg_color = Color(0.78431374, 0.8235294, 0.8784314, 1)
-border_color = Color(0.78431374, 0.8235294, 0.8784314, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-shadow_color = Color(1, 1, 1, 0)
-shadow_offset = Vector2(0, 4)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bfv3q"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6nqaj"]
-content_margin_left = 8.0
-content_margin_top = 8.0
-content_margin_right = 8.0
-content_margin_bottom = 8.0
-bg_color = Color(0.43137255, 0.65882355, 0.99607843, 1)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.30588236, 0.5529412, 0.90588236, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-shadow_color = Color(1, 1, 1, 0)
-shadow_offset = Vector2(0, 4)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1un0q"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k1vsa"]
-content_margin_left = 0.0
-content_margin_top = 8.0
-content_margin_right = 0.0
-content_margin_bottom = 8.0
-bg_color = Color(0.16470589, 0.20784314, 0.25882354, 1)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.22352941, 0.27450982, 0.34117648, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-shadow_color = Color(1, 1, 1, 0)
-shadow_offset = Vector2(0, 4)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hmnot"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qkp01"]
-content_margin_left = 0.0
-content_margin_top = 0.0
-content_margin_right = 0.0
-content_margin_bottom = 0.0
-bg_color = Color(1, 1, 1, 0)
-draw_center = false
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.7176471, 0.83137256, 1, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-expand_margin_left = 2.0
-expand_margin_top = 2.0
-expand_margin_right = 2.0
-expand_margin_bottom = 2.0
-shadow_color = Color(1, 1, 1, 0)
-shadow_offset = Vector2(0, 4)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_14jfu"]
 
 [sub_resource type="Image" id="Image_r3mx8"]
 data = {
@@ -3309,92 +3232,15 @@ shadow_offset = Vector2(0, 4)
 
 [sub_resource type="ImageTexture" id="ImageTexture_2sydb"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vy3lx"]
-content_margin_left = 8.0
-content_margin_top = 8.0
-content_margin_right = 8.0
-content_margin_bottom = 8.0
-bg_color = Color(0.33333334, 0.39607844, 0.4745098, 1)
-border_color = Color(0.33333334, 0.39607844, 0.4745098, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-shadow_color = Color(1, 1, 1, 0)
-shadow_offset = Vector2(0, 4)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ibbds"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d64dt"]
-content_margin_left = 8.0
-content_margin_top = 8.0
-content_margin_right = 8.0
-content_margin_bottom = 8.0
-bg_color = Color(0.78431374, 0.8235294, 0.8784314, 1)
-border_color = Color(0.78431374, 0.8235294, 0.8784314, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-shadow_color = Color(1, 1, 1, 0)
-shadow_offset = Vector2(0, 4)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u2jvx"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dkq4p"]
-content_margin_left = 8.0
-content_margin_top = 8.0
-content_margin_right = 8.0
-content_margin_bottom = 8.0
-bg_color = Color(0.43137255, 0.65882355, 0.99607843, 1)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.30588236, 0.5529412, 0.90588236, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-shadow_color = Color(1, 1, 1, 0)
-shadow_offset = Vector2(0, 4)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f8sda"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eakuc"]
-content_margin_left = 8.0
-content_margin_top = 0.0
-content_margin_right = 8.0
-content_margin_bottom = 0.0
-bg_color = Color(0.16470589, 0.20784314, 0.25882354, 1)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.22352941, 0.27450982, 0.34117648, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-shadow_color = Color(1, 1, 1, 0)
-shadow_offset = Vector2(0, 4)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vcx1g"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e7mwe"]
-content_margin_left = 0.0
-content_margin_top = 0.0
-content_margin_right = 0.0
-content_margin_bottom = 0.0
-bg_color = Color(1, 1, 1, 0)
-draw_center = false
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.7176471, 0.83137256, 1, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-expand_margin_left = 2.0
-expand_margin_top = 2.0
-expand_margin_right = 2.0
-expand_margin_bottom = 2.0
-shadow_color = Color(1, 1, 1, 0)
-shadow_offset = Vector2(0, 4)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xaa33"]
 
 [sub_resource type="Image" id="Image_s4rkh"]
 data = {
@@ -3868,11 +3714,11 @@ HScrollBar/icons/decrement_pressed = SubResource("ImageTexture_ekyqj")
 HScrollBar/icons/increment = SubResource("ImageTexture_ekyqj")
 HScrollBar/icons/increment_highlight = SubResource("ImageTexture_ekyqj")
 HScrollBar/icons/increment_pressed = SubResource("ImageTexture_ekyqj")
-HScrollBar/styles/grabber = SubResource("StyleBoxFlat_nqoto")
-HScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_vm1by")
-HScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_6nqaj")
-HScrollBar/styles/scroll = SubResource("StyleBoxFlat_k1vsa")
-HScrollBar/styles/scroll_focus = SubResource("StyleBoxFlat_qkp01")
+HScrollBar/styles/grabber = SubResource("StyleBoxEmpty_4rfoy")
+HScrollBar/styles/grabber_highlight = SubResource("StyleBoxEmpty_bfv3q")
+HScrollBar/styles/grabber_pressed = SubResource("StyleBoxEmpty_1un0q")
+HScrollBar/styles/scroll = SubResource("StyleBoxEmpty_hmnot")
+HScrollBar/styles/scroll_focus = SubResource("StyleBoxEmpty_14jfu")
 HSlider/constants/center_grabber = 1
 HSlider/constants/grabber_offset = 0
 HSlider/constants/tick_offset = 4
@@ -4175,11 +4021,11 @@ VScrollBar/icons/decrement_pressed = SubResource("ImageTexture_2sydb")
 VScrollBar/icons/increment = SubResource("ImageTexture_2sydb")
 VScrollBar/icons/increment_highlight = SubResource("ImageTexture_2sydb")
 VScrollBar/icons/increment_pressed = SubResource("ImageTexture_2sydb")
-VScrollBar/styles/grabber = SubResource("StyleBoxFlat_vy3lx")
-VScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_d64dt")
-VScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_dkq4p")
-VScrollBar/styles/scroll = SubResource("StyleBoxFlat_eakuc")
-VScrollBar/styles/scroll_focus = SubResource("StyleBoxFlat_e7mwe")
+VScrollBar/styles/grabber = SubResource("StyleBoxEmpty_ibbds")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxEmpty_u2jvx")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxEmpty_f8sda")
+VScrollBar/styles/scroll = SubResource("StyleBoxEmpty_vcx1g")
+VScrollBar/styles/scroll_focus = SubResource("StyleBoxEmpty_xaa33")
 VSlider/constants/center_grabber = 1
 VSlider/constants/grabber_offset = 0
 VSlider/constants/tick_offset = 4

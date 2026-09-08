@@ -1,13 +1,15 @@
 [gd_scene format=3 uid="uid://ctkmakv4mg44o"]
 
 [ext_resource type="Script" uid="uid://5kdt0bmdqpnu" path="res://script/karyawan.gd" id="1_qngjj"]
+[ext_resource type="Theme" uid="uid://djws7bmoe8i72" path="res://clean_dark.tres" id="2_rmc8f"]
+[ext_resource type="Script" uid="uid://dpow70hx4u1yn" path="res://script/search_box.gd" id="3_8ain7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qngjj"]
 content_margin_left = 18.0
 content_margin_top = 18.0
 content_margin_right = 18.0
 content_margin_bottom = 18.0
-bg_color = Color(0.021721022, 0.03204958, 0.04782711, 1)
+bg_color = Color(0.06746501, 0.08300286, 0.10895341, 1)
 border_width_left = 1
 border_width_top = 1
 border_width_right = 1
@@ -31,7 +33,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_rmc8f")
 script = ExtResource("1_qngjj")
+even_row_color = Color(0.18039216, 0.2, 0.2509804, 0)
+odd_row_color = Color(0.12156863, 0.14117648, 0.18039216, 0)
+border_color = Color(0.3019608, 0.34901962, 0.4, 0)
 
 [node name="PanelContainer" type="VBoxContainer" parent="." unique_id=2130815849]
 layout_mode = 2
@@ -58,13 +64,16 @@ size_flags_stretch_ratio = 3.21
 [node name="SearchBox" type="TextEdit" parent="PanelContainer/UpperBody" unique_id=579451513]
 layout_mode = 2
 size_flags_horizontal = 3
-placeholder_text = "Cari Nama..."
+size_flags_stretch_ratio = 0.7
+theme = ExtResource("2_rmc8f")
+placeholder_text = "Cari..."
+script = ExtResource("3_8ain7")
 
 [node name="TambahData" type="Button" parent="PanelContainer/UpperBody" unique_id=453696665]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.0
-text = "Tambah Data Karyawan"
+size_flags_stretch_ratio = 0.2
+text = "Tambah Data"
 
 [node name="SummaryCards" type="HBoxContainer" parent="PanelContainer" unique_id=1428593948]
 layout_mode = 2
@@ -81,8 +90,7 @@ size_flags_vertical = 3
 [node name="Label" type="Label" parent="PanelContainer/SummaryCards/TotalKaryawan/PanelContainer" unique_id=398899894]
 layout_mode = 2
 size_flags_vertical = 0
-text = "Total Karyawan: "
-horizontal_alignment = 1
+text = "Total Karyawan : "
 
 [node name="DivisiDapur" type="VBoxContainer" parent="PanelContainer/SummaryCards" unique_id=948322936]
 layout_mode = 2
@@ -95,8 +103,7 @@ size_flags_vertical = 3
 [node name="Label" type="Label" parent="PanelContainer/SummaryCards/DivisiDapur/PanelContainer" unique_id=2140985234]
 layout_mode = 2
 size_flags_vertical = 0
-text = "Divisi Dapur: "
-horizontal_alignment = 1
+text = "Divisi Dapur : "
 
 [node name="DivisiPelayanan" type="VBoxContainer" parent="PanelContainer/SummaryCards" unique_id=1859541345]
 layout_mode = 2
@@ -109,8 +116,7 @@ size_flags_vertical = 3
 [node name="Label" type="Label" parent="PanelContainer/SummaryCards/DivisiPelayanan/PanelContainer" unique_id=723275429]
 layout_mode = 2
 size_flags_vertical = 0
-text = "Divisi Pelayanan: "
-horizontal_alignment = 1
+text = "Divisi Pelayanan : "
 
 [node name="DivisiDistribusi" type="VBoxContainer" parent="PanelContainer/SummaryCards" unique_id=296915570]
 layout_mode = 2
@@ -122,8 +128,7 @@ size_flags_vertical = 3
 
 [node name="Label" type="Label" parent="PanelContainer/SummaryCards/DivisiDistribusi/PanelContainer" unique_id=318935260]
 layout_mode = 2
-text = "Divisi Distribusi: "
-horizontal_alignment = 1
+text = "Divisi Distribusi : "
 
 [node name="MainBody" type="PanelContainer" parent="." unique_id=157416151]
 layout_mode = 2

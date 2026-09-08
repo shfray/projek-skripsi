@@ -2,6 +2,20 @@ extends VBoxContainer
 
 @onready var table_rows: VBoxContainer = %TableRows
 
+@export_group("Row Styling")
+@export var even_row_color: Color = Color(0.18, 0.2, 0.25)
+@export var odd_row_color: Color = Color(0.12, 0.14, 0.18)
+@export var cell_margin_top: float = 8.0
+@export var cell_margin_bottom: float = 8.0
+@export var corner_radius: int = 6
+@export var border_width: int = 1
+@export var border_color: Color = Color(0.3, 0.35, 0.4)
+
+@export_group("Label Alignment & Defaults")
+@export var text_horizontal_alignment: HorizontalAlignment = HORIZONTAL_ALIGNMENT_CENTER
+@export var text_vertical_alignment: VerticalAlignment = VERTICAL_ALIGNMENT_CENTER
+@export var default_empty_text: String = "-"
+
 # Dummy dataset matching your header columns
 var dummy_data: Array[Dictionary] = [
 	{"id": "EMP-001", "nama": "Ahmad Subagja", "dapur": "Ya", "pelayanan": "-", "distribusi": "-"},
@@ -40,24 +54,26 @@ func create_row_node(data: Dictionary, is_even: bool) -> HBoxContainer:
 	var row = HBoxContainer.new()
 	row.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 
-	# Column keys in order: ID, Nama Karyawan, Divisi Dapur, Divisi Pelayanan, Divisi Distribusi
 	var keys = ["id", "nama", "dapur", "pelayanan", "distribusi"]
 
 	for key in keys:
+		# Create a fresh PanelContainer instance for each column
 		var panel = PanelContainer.new()
 		panel.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 
-		# Alternating row background for visual contrast
 		var style = StyleBoxFlat.new()
-		style.bg_color = Color(0.18, 0.2, 0.25) if is_even else Color(0.12, 0.14, 0.18)
-		style.content_margin_top = 8
-		style.content_margin_bottom = 8
+		style.bg_color = even_row_color if is_even else odd_row_color
+		style.content_margin_top = cell_margin_top
+		style.content_margin_bottom = cell_margin_bottom
+		style.set_corner_radius_all(corner_radius)
+		style.set_border_width_all(border_width)
+		style.border_color = border_color
 		panel.add_theme_stylebox_override("panel", style)
 
 		var label = Label.new()
-		label.text = str(data.get(key, "-"))
-		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+		label.text = str(data.get(key, default_empty_text))
+		label.horizontal_alignment = text_horizontal_alignment
+		label.vertical_alignment = text_vertical_alignment
 
 		panel.add_child(label)
 		row.add_child(panel)

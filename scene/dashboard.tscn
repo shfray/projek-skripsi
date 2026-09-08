@@ -34,6 +34,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5vd6n")
+metadata/_edit_use_anchors_ = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1593813338]
 layout_mode = 2
@@ -51,7 +52,7 @@ horizontal_alignment = 1
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer" unique_id=987018856]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 3.54
+size_flags_stretch_ratio = 5.16
 
 [node name="ColorRect2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer" unique_id=142805925]
 layout_mode = 2
@@ -82,7 +83,7 @@ size_flags_vertical = 3
 [node name="ColorRect8" type="MarginContainer" parent="VBoxContainer/MainBody/ListMenu/SideNavbar" unique_id=1225632800]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 0.5
+size_flags_stretch_ratio = 0.75
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/MainBody/ListMenu/SideNavbar" unique_id=743834334]
 layout_mode = 2
@@ -127,17 +128,13 @@ size_flags_stretch_ratio = 0.5
 [node name="MainDisplay" type="Control" parent="VBoxContainer/MainBody" unique_id=1349296616]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 4.52
+size_flags_stretch_ratio = 7.5
 script = ExtResource("2_bo221")
 menu_utama = ExtResource("3_mv7ns")
 menu_karyawan = ExtResource("4_5vd6n")
 menu_kriteria = ExtResource("5_mv7ns")
 menu_peringkat_karyawan = ExtResource("6_hmjlp")
 menu_laporan = ExtResource("7_2jaex")
-
-[node name="Karyawan" parent="VBoxContainer/MainBody/MainDisplay" unique_id=67440343 instance=ExtResource("4_5vd6n")]
-layout_mode = 0
-anchors_preset = 0
 
 [connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/MenuUtama" to="VBoxContainer/MainBody" method="_on_menu_utama_pressed"]
 [connection signal="pressed" from="VBoxContainer/MainBody/ListMenu/SideNavbar/VBoxContainer/ProfilKaryawan" to="VBoxContainer/MainBody" method="_on_pengaturan_pressed"]
