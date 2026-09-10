@@ -1,0 +1,24 @@
++---------------------------------------------------------------------------------------------------+
+| ⚙️ KRITERIA & BOBOT PENILAIAN (SAW)                       [ Total Bobot: 100% / 1.00 (Valid) ] |
++---------------------------------------------------------------------------------------------------+
+|                                                                                                   |
+|  [ STATISTIK KRITERIA ]                                                                           |
+|  +-----------------------+  +-----------------------+  +-----------------------+                  |
+|  | Total Kriteria        |  | Jenis Benefit         |  | Jenis Cost            |                  |
+|  |        5              |  |        4              |  |        1              |                  |
+|  +-----------------------+  +-----------------------+  +-----------------------+                  |
+|                                                                                                   |
+|  [ TABEL DATA KRITERIA & BOBOT ]                                                                  |
+|  +------+---------------+-----------------------+----------+------------+----------------------+  |
+|  | Kode | Nama Kriteria | Keterangan            | Atribut  | Bobot (W)  | Aksi                 |  |
+|  +------+---------------+-----------------------+----------+------------+----------------------+  |
+|  | C1   | Kedisiplinan  | Kehadiran & Ketepatan | Benefit  | 0.30 (30%) | [✏️ Edit] [🗑️ Hapus] |  |
+|  | C2   | Kualitas Kerja| Hasil racikan/penyajian| Benefit | 0.25 (25%) | [✏️ Edit] [🗑️ Hapus] |  |
+|  | C3   | Tanggung Jawab| Penanganan tugas      | Benefit  | 0.20 (20%) | [✏️ Edit] [🗑️ Hapus] |  |
+|  | C4   | Sikap Kerja   | Etos kerja & Kerjasama| Benefit  | 0.15 (15%) | [✏️ Edit] [🗑️ Hapus] |  |
+|  | C5   | Pelanggaran   | Catatan teguran       | Cost     | 0.10 (10%) | [✏️ Edit] [🗑️ Hapus] |  |
+|  +------+---------------+-----------------------+----------+------------+----------------------+  |
+|                                                                                                   |
+|  [ TOMBOL AKSI ]                                                                                  |
+|  [ ➕ Tambah Kriteria Baru ]   [ 📊 Kelola Sub-Kriteria / Skala ]                                  |
++---------------------------------------------------------------------------------------------------+

@@ -1,0 +1,24 @@
++---------------------------------------------------------------------------------------------------+
+| 🍔 BALE CATERING - SPK EVALUASI KARYAWAN                      [ Periode: April 2026 v ]  [Admin] |
++---------------+-----------------------------------------------------------------------------------+
+|               |                                                                                   |
+|  [🏠] Utama   |  [ METRIK UTAMA / SUMMARY CARDS ]                                                 |
+|  [👥] Karyawan|  +------------------+  +------------------+  +------------------+  +---------------+|
+|  [⚙️] Kriteria|  | Total Karyawan   |  | Sudah Dinilai    |  | Karyawan Terbaik |  | Status SPK    ||
+|  [🧮] Hitung  |  |      24 Orang    |  |     20 / 24      |  | Ahmad Supriyadi  |  | Siap Dihitung ||
+|       SAW     |  +------------------+  +------------------+  +------------------+  +---------------+|
+|  [📊] Laporan |                                                                                   |
+|  [⚙️] Pengaturan|  [ PANEL UTAMA - TOP 5 PERINGKAT SAW ]               [ PANEL KANAN - BOBOT ]       |
+|               |  +-------------------------------------------------+  +---------------------------+|
+|               |  | Rangking  Nama Karyawan    Divisi   Skor Akhir|  | Bobot Kriteria Aktif      ||
+|               |  +-------------------------------------------------+  +---------------------------+|
+|               |  |    🥇 1    Ahmad Supriyadi  Dapur     0.925     |  | C1 (Kedisiplinan) : 30%   ||
+|               |  |    🥈 2    Siti Rahma       Pelayanan 0.880     |  | C2 (Kualitas Kerja): 25%   ||
+|               |  |    🥉 3    Budi Santoso     Dapur     0.840     |  | C3 (Tanggung Jwb) : 20%   ||
+|               |  |       4    Dewi Sartika     Logistik  0.795     |  | C4 (Sikap Kerja)  : 15%   ||
+|               |  |       5    Eko Prasetyo     Pelayanan 0.750     |  | C5 (Absensi)      : 10%   ||
+|               |  +-------------------------------------------------+  +---------------------------+|
+|               |                                                                                   |
+|               |  [ TOMBOL AKSI CEPAT ]                                                            |
+|               |  [ ➕ Input Penilaian Baru ]   [ ⚡ Jalankan Perhitungan SAW ]   [ 📄 Cetak Laporan ]|
++---------------+-----------------------------------------------------------------------------------+
