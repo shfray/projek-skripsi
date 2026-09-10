@@ -1,9 +1,85 @@
 [gd_scene format=3 uid="uid://34mdh4i7s2g7"]
 
-[node name="ProfilKaryawan" type="Control" unique_id=1148072791]
-layout_mode = 3
+[node name="ProfilKaryawan" type="VBoxContainer" unique_id=1271802857]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HeaderCard" type="HBoxContainer" parent="." unique_id=1999114750]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect" type="PanelContainer" parent="HeaderCard" unique_id=168646232]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.58
+
+[node name="FotoProfil" type="TextureRect" parent="HeaderCard/ColorRect" unique_id=1557029754]
+layout_mode = 2
+
+[node name="ColorRect2" type="VBoxContainer" parent="HeaderCard" unique_id=473255879]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="HeaderCard/ColorRect2" unique_id=1304727770]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.22
+text = "Data Diri Singkat
+"
+
+[node name="TextEdit2" type="TextEdit" parent="HeaderCard/ColorRect2" unique_id=467733289]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect3" type="PanelContainer" parent="HeaderCard" unique_id=647836248]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="HeaderCard/ColorRect3" unique_id=363287507]
+layout_mode = 2
+text = "Edit Profil"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="." unique_id=1436195073]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer2" unique_id=765441484]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="VBoxContainer" parent="HBoxContainer2/PanelContainer" unique_id=1060256799]
+layout_mode = 2
+
+[node name="TextEdit" type="TextEdit" parent="HBoxContainer2/PanelContainer/HBoxContainer" unique_id=1373573099]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Informasi Pribadi"
+
+[node name="TextEdit2" type="TextEdit" parent="HBoxContainer2/PanelContainer/HBoxContainer" unique_id=1385678699]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.23
+
+[node name="PanelContainer2" type="PanelContainer" parent="HBoxContainer2" unique_id=270943835]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="VBoxContainer" parent="HBoxContainer2/PanelContainer2" unique_id=596991348]
+layout_mode = 2
+
+[node name="TextEdit" type="TextEdit" parent="HBoxContainer2/PanelContainer2/HBoxContainer" unique_id=1905041189]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.34
+text = "Hasil Evaluasi & Kriteria
+"
+
+[node name="TextEdit2" type="TextEdit" parent="HBoxContainer2/PanelContainer2/HBoxContainer" unique_id=2135058443]
+layout_mode = 2
+size_flags_vertical = 3
