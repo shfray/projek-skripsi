@@ -16,33 +16,48 @@ size_flags_vertical = 3
 [node name="ColorRect" type="PanelContainer" parent="HeaderCard" unique_id=168646232]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.58
+size_flags_stretch_ratio = 0.34
 
 [node name="FotoProfil" type="TextureRect" parent="HeaderCard/ColorRect" unique_id=1557029754]
 layout_mode = 2
 
-[node name="ColorRect2" type="VBoxContainer" parent="HeaderCard" unique_id=473255879]
+[node name="ColorRect2" type="VBoxContainer" parent="HeaderCard" unique_id=566872886]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="TextEdit" type="TextEdit" parent="HeaderCard/ColorRect2" unique_id=1304727770]
+[node name="VBoxContainer" type="HBoxContainer" parent="HeaderCard/ColorRect2" unique_id=1748138571]
 layout_mode = 2
+size_flags_horizontal = 3
 size_flags_vertical = 3
-size_flags_stretch_ratio = 0.22
+
+[node name="PanelContainer" type="PanelContainer" parent="HeaderCard/ColorRect2/VBoxContainer" unique_id=1791428330]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.11
+
+[node name="TextEdit" type="Label" parent="HeaderCard/ColorRect2/VBoxContainer/PanelContainer" unique_id=58496518]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.95
 text = "Data Diri Singkat
 "
 
-[node name="TextEdit2" type="TextEdit" parent="HeaderCard/ColorRect2" unique_id=467733289]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="ColorRect3" type="PanelContainer" parent="HeaderCard" unique_id=647836248]
+[node name="Button" type="Button" parent="HeaderCard/ColorRect2/VBoxContainer" unique_id=363287507]
 layout_mode = 2
 size_flags_horizontal = 3
-
-[node name="Button" type="Button" parent="HeaderCard/ColorRect3" unique_id=363287507]
-layout_mode = 2
+size_flags_stretch_ratio = 0.7
 text = "Edit Profil"
+
+[node name="PanelContainer" type="PanelContainer" parent="HeaderCard/ColorRect2" unique_id=1726163242]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.0
+
+[node name="TextEdit2" type="Label" parent="HeaderCard/ColorRect2/PanelContainer" unique_id=427707285]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.07
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="." unique_id=1436195073]
 layout_mode = 2
@@ -55,12 +70,21 @@ size_flags_horizontal = 3
 [node name="HBoxContainer" type="VBoxContainer" parent="HBoxContainer2/PanelContainer" unique_id=1060256799]
 layout_mode = 2
 
-[node name="TextEdit" type="TextEdit" parent="HBoxContainer2/PanelContainer/HBoxContainer" unique_id=1373573099]
+[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer2/PanelContainer/HBoxContainer" unique_id=1150488895]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.34
+
+[node name="TextEdit" type="Label" parent="HBoxContainer2/PanelContainer/HBoxContainer/PanelContainer" unique_id=987880491]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Informasi Pribadi"
 
-[node name="TextEdit2" type="TextEdit" parent="HBoxContainer2/PanelContainer/HBoxContainer" unique_id=1385678699]
+[node name="PanelContainer2" type="PanelContainer" parent="HBoxContainer2/PanelContainer/HBoxContainer" unique_id=2086659809]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextEdit2" type="Label" parent="HBoxContainer2/PanelContainer/HBoxContainer/PanelContainer2" unique_id=22114058]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 3.23
@@ -72,7 +96,12 @@ size_flags_horizontal = 3
 [node name="HBoxContainer" type="VBoxContainer" parent="HBoxContainer2/PanelContainer2" unique_id=596991348]
 layout_mode = 2
 
-[node name="TextEdit" type="TextEdit" parent="HBoxContainer2/PanelContainer2/HBoxContainer" unique_id=1905041189]
+[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer2/PanelContainer2/HBoxContainer" unique_id=864076969]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="TextEdit" type="Label" parent="HBoxContainer2/PanelContainer2/HBoxContainer/PanelContainer" unique_id=498542064]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -80,6 +109,10 @@ size_flags_stretch_ratio = 0.34
 text = "Hasil Evaluasi & Kriteria
 "
 
-[node name="TextEdit2" type="TextEdit" parent="HBoxContainer2/PanelContainer2/HBoxContainer" unique_id=2135058443]
+[node name="PanelContainer2" type="PanelContainer" parent="HBoxContainer2/PanelContainer2/HBoxContainer" unique_id=1677454978]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextEdit2" type="Label" parent="HBoxContainer2/PanelContainer2/HBoxContainer/PanelContainer2" unique_id=1240758706]
 layout_mode = 2
 size_flags_vertical = 3

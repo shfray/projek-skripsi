@@ -59,14 +59,15 @@ text = "DATA KARYAWAN BALE CATERING"
 [node name="MarginContainer" type="MarginContainer" parent="PanelContainer/UpperBody" unique_id=477096491]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 3.21
+size_flags_stretch_ratio = 2.67
 
 [node name="SearchBox" type="TextEdit" parent="PanelContainer/UpperBody" unique_id=579451513]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.7
+size_flags_stretch_ratio = 0.88
 theme = ExtResource("2_rmc8f")
-placeholder_text = "Cari..."
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Cari Nama"
 script = ExtResource("3_8ain7")
 
 [node name="TambahData" type="Button" parent="PanelContainer/UpperBody" unique_id=453696665]
