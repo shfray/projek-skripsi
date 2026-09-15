@@ -2,11 +2,11 @@ extends Control
 
 # Exported PackedScenes so you can assign them in the Godot Inspector
 @export var menu_utama: PackedScene
-@export var menu_karyawan: PackedScene
-@export var menu_kriteria: PackedScene
+@export var menu_profil_karyawan: PackedScene
+@export var menu_data_karyawan: PackedScene
 @export var menu_peringkat_karyawan: PackedScene
+@export var menu_kriteria: PackedScene
 @export var menu_laporan: PackedScene
-@export var menu_pengaturan: PackedScene
 
 ## Replaces current display content with a new instantiated PackedScene
 func change_display(new_scene: PackedScene) -> void:

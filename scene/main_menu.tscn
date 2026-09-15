@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://qgocegug7pn1"]
 
+[ext_resource type="Theme" uid="uid://djws7bmoe8i72" path="res://clean_dark.tres" id="1_3er1b"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m4svf"]
 content_margin_left = 18.0
 content_margin_top = 18.0
@@ -53,6 +55,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_m4svf")
 [node name="ColorRect2" type="PanelContainer" parent="Summary/VBoxContainer/ColorRect2" unique_id=720349215]
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("1_3er1b")
 
 [node name="ColorRect3" type="PanelContainer" parent="Summary/VBoxContainer/ColorRect2" unique_id=1266135819]
 layout_mode = 2
