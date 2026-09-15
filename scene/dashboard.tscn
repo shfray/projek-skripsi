@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://ctkmakv4mg44o" path="res://scene/karyawan.tscn" id="4_5vd6n"]
 [ext_resource type="PackedScene" uid="uid://b00sa274qoatx" path="res://scene/kriteria.tscn" id="5_mv7ns"]
 [ext_resource type="PackedScene" uid="uid://cja17b33swhpe" path="res://scene/peringkat_karyawan.tscn" id="6_hmjlp"]
+[ext_resource type="PackedScene" uid="uid://cs7idwvw45jqo" path="res://scene/laporan.tscn" id="9_njdh1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vd6n"]
 content_margin_left = 18.0
@@ -136,3 +137,4 @@ menu_profil_karyawan = ExtResource("4_2jaex")
 menu_data_karyawan = ExtResource("4_5vd6n")
 menu_peringkat_karyawan = ExtResource("6_hmjlp")
 menu_kriteria = ExtResource("5_mv7ns")
+menu_laporan = ExtResource("9_njdh1")

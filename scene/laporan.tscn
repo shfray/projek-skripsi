@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://cs7idwvw45jqo"]
+
+[node name="Laporan" type="VBoxContainer" unique_id=2119569329]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=884786277]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 9.5
+
+[node name="Label" type="Label" parent="VBoxContainer2" unique_id=2034644532]
+layout_mode = 2
+size_flags_vertical = 6
+text = "BALE CATERING BEKASI
+LAPORAN EVALUASI KINERJA KARYAWAN (SAW)"
+horizontal_alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer2" unique_id=887036699]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.52
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer2" unique_id=507918003]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 1.66
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer2/HBoxContainer" unique_id=1732328167]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.1
+
+[node name="Label" type="Label" parent="VBoxContainer2/HBoxContainer" unique_id=1399382295]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Bekasi, 30 April 2026
+                                                 
+( Owner Bale Catering )"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="HBoxContainer" parent="." unique_id=179339849]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer" unique_id=1104855898]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.92
+
+[node name="Label" type="Label" parent="VBoxContainer/PanelContainer" unique_id=374516125]
+layout_mode = 2
+text = "Menampilkan Laporan Keseluruhan Evaluasi Kinerja (Total: 9 Karyawan)"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=350779709]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Eksport CSV"
