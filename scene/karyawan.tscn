@@ -25,8 +25,6 @@ shadow_offset = Vector2(0, 4)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qngjj"]
 
-[sub_resource type="Theme" id="Theme_qngjj"]
-
 [node name="Karyawan" type="VBoxContainer" unique_id=67440343]
 anchors_preset = 15
 anchor_right = 1.0
@@ -37,7 +35,6 @@ theme = ExtResource("2_rmc8f")
 script = ExtResource("1_qngjj")
 even_row_color = Color(0.18039216, 0.2, 0.2509804, 0)
 odd_row_color = Color(0.12156863, 0.14117648, 0.18039216, 0)
-border_color = Color(0.3019608, 0.34901962, 0.4, 0)
 
 [node name="PanelContainer" type="VBoxContainer" parent="." unique_id=2130815849]
 layout_mode = 2
@@ -140,60 +137,6 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_qngjj")
 [node name="VBoxContainer" type="VBoxContainer" parent="MainBody" unique_id=683784315]
 layout_mode = 2
 
-[node name="TableHeader" type="HBoxContainer" parent="MainBody/VBoxContainer" unique_id=1271412893]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="PanelContainer" type="PanelContainer" parent="MainBody/VBoxContainer/TableHeader" unique_id=1012654061]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_styles/panel = SubResource("StyleBoxTexture_qngjj")
-
-[node name="ID" type="Label" parent="MainBody/VBoxContainer/TableHeader/PanelContainer" unique_id=256075406]
-layout_mode = 2
-text = "ID"
-horizontal_alignment = 1
-
-[node name="PanelContainer2" type="PanelContainer" parent="MainBody/VBoxContainer/TableHeader" unique_id=698909808]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_styles/panel = SubResource("StyleBoxTexture_qngjj")
-
-[node name="NamaKaryawan" type="Label" parent="MainBody/VBoxContainer/TableHeader/PanelContainer2" unique_id=666593515]
-layout_mode = 2
-text = "Nama Karyawan"
-horizontal_alignment = 1
-
-[node name="PanelContainer3" type="PanelContainer" parent="MainBody/VBoxContainer/TableHeader" unique_id=43614334]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_styles/panel = SubResource("StyleBoxTexture_qngjj")
-
-[node name="DivisiDapur" type="Label" parent="MainBody/VBoxContainer/TableHeader/PanelContainer3" unique_id=1990043500]
-layout_mode = 2
-text = "Divisi Dapur"
-horizontal_alignment = 1
-
-[node name="PanelContainer4" type="PanelContainer" parent="MainBody/VBoxContainer/TableHeader" unique_id=2042652553]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_styles/panel = SubResource("StyleBoxTexture_qngjj")
-
-[node name="DivisiPelayanan" type="Label" parent="MainBody/VBoxContainer/TableHeader/PanelContainer4" unique_id=2001586536]
-layout_mode = 2
-text = "Divisi Pelayanan"
-horizontal_alignment = 1
-
-[node name="PanelContainer5" type="PanelContainer" parent="MainBody/VBoxContainer/TableHeader" unique_id=1965337466]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_styles/panel = SubResource("StyleBoxTexture_qngjj")
-
-[node name="DivisiDistribusi" type="Label" parent="MainBody/VBoxContainer/TableHeader/PanelContainer5" unique_id=1180816344]
-layout_mode = 2
-text = "Divisi Distribusi"
-horizontal_alignment = 1
-
 [node name="TableScroll" type="ScrollContainer" parent="MainBody/VBoxContainer" unique_id=1753150777]
 layout_mode = 2
 size_flags_vertical = 3
@@ -204,4 +147,59 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = SubResource("Theme_qngjj")
+theme = ExtResource("2_rmc8f")
+
+[node name="TableHeader" type="HBoxContainer" parent="MainBody/VBoxContainer/TableScroll/TableRows" unique_id=1271412893]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_rmc8f")
+
+[node name="PanelContainer" type="PanelContainer" parent="MainBody/VBoxContainer/TableScroll/TableRows/TableHeader" unique_id=1012654061]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_qngjj")
+
+[node name="ID" type="Label" parent="MainBody/VBoxContainer/TableScroll/TableRows/TableHeader/PanelContainer" unique_id=256075406]
+layout_mode = 2
+text = "ID"
+horizontal_alignment = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="MainBody/VBoxContainer/TableScroll/TableRows/TableHeader" unique_id=698909808]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_qngjj")
+
+[node name="NamaKaryawan" type="Label" parent="MainBody/VBoxContainer/TableScroll/TableRows/TableHeader/PanelContainer2" unique_id=666593515]
+layout_mode = 2
+text = "Nama Karyawan"
+horizontal_alignment = 1
+
+[node name="PanelContainer3" type="PanelContainer" parent="MainBody/VBoxContainer/TableScroll/TableRows/TableHeader" unique_id=43614334]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_qngjj")
+
+[node name="DivisiDapur" type="Label" parent="MainBody/VBoxContainer/TableScroll/TableRows/TableHeader/PanelContainer3" unique_id=1990043500]
+layout_mode = 2
+text = "Divisi Dapur"
+horizontal_alignment = 1
+
+[node name="PanelContainer4" type="PanelContainer" parent="MainBody/VBoxContainer/TableScroll/TableRows/TableHeader" unique_id=2042652553]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_qngjj")
+
+[node name="DivisiPelayanan" type="Label" parent="MainBody/VBoxContainer/TableScroll/TableRows/TableHeader/PanelContainer4" unique_id=2001586536]
+layout_mode = 2
+text = "Divisi Pelayanan"
+horizontal_alignment = 1
+
+[node name="PanelContainer5" type="PanelContainer" parent="MainBody/VBoxContainer/TableScroll/TableRows/TableHeader" unique_id=1965337466]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_qngjj")
+
+[node name="DivisiDistribusi" type="Label" parent="MainBody/VBoxContainer/TableScroll/TableRows/TableHeader/PanelContainer5" unique_id=1180816344]
+layout_mode = 2
+text = "Divisi Distribusi"
+horizontal_alignment = 1

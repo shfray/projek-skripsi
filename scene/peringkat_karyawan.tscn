@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cja17b33swhpe"]
 
+[ext_resource type="Script" uid="uid://dep5akjp1udbh" path="res://script/peringkat_karyawan.gd" id="1_cx1sd"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wbkab"]
 content_margin_left = 18.0
 content_margin_top = 18.0
@@ -31,6 +33,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("1_cx1sd")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=334813030]
 layout_mode = 2
