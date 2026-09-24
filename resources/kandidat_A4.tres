@@ -7,8 +7,8 @@ script = ExtResource("1_a3rwr")
 id = "A4"
 nama = "Toniki"
 criteria = {
-"C1​ (Tes Tulis)": 85.0,
-"C2​ (Wawancara)": 80.0,
-"C3​ (Terlambat)": 0.0,
-"C4(kerja sama)": 70.0
+"c1​ (tes tulis)": 85.0,
+"c2​ (wawancara)": 80.0,
+"c3​ (terlambat)": 0.0,
+"c4(kerja sama)": 70.0
 }

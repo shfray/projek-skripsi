@@ -16,10 +16,12 @@ extends VBoxContainer
 @export var border_color: Color = Color(0.25, 0.28, 0.35)
 
 var file_dialog: FileDialog
+var all_candidates: Array[CandidateData] = []
 
 func _ready() -> void:
 	_setup_file_dialog()
 	btn_tambah_data.pressed.connect(_on_tambah_data_pressed)
+	search_box.text_changed.connect(_on_search_text_changed)
 	load_and_display_data()
 
 func _setup_file_dialog() -> void:
@@ -39,15 +41,29 @@ func _on_csv_selected(path: String) -> void:
 		load_and_display_data()
 
 func load_and_display_data() -> void:
-	var candidates: Array[CandidateData] = []
+	all_candidates.clear()
 	var dir = DirAccess.open("res://resources/")
 	if dir:
 		for f in dir.get_files():
 			if f.ends_with(".tres"):
 				var res = ResourceLoader.load("res://resources/".path_join(f)) as CandidateData
-				if res: candidates.append(res)
+				if res: all_candidates.append(res)
 				
-	populate_table(candidates)
+	populate_table(all_candidates)
+
+func _on_search_text_changed() -> void:
+	var query = search_box.text.strip_edges().to_lower()
+	
+	if query == "":
+		populate_table(all_candidates)
+		return
+		
+	var filtered_candidates: Array[CandidateData] = []
+	for c in all_candidates:
+		if query in c.nama.to_lower():
+			filtered_candidates.append(c)
+			
+	populate_table(filtered_candidates)
 
 func populate_table(candidates: Array[CandidateData]) -> void:
 	if table_rows == null:
@@ -59,9 +75,9 @@ func populate_table(candidates: Array[CandidateData]) -> void:
 		if child != table_header:
 			child.queue_free()
 
-	# Extract unique criteria keys across all candidate resources
+	# Extract unique criteria keys from ALL loaded candidates so headers remain visible
 	var criteria_keys: Array[String] = []
-	for c in candidates:
+	for c in all_candidates:
 		for k in c.criteria.keys():
 			if not k in criteria_keys:
 				criteria_keys.append(k)
@@ -76,6 +92,28 @@ func populate_table(candidates: Array[CandidateData]) -> void:
 		
 		for key in criteria_keys:
 			table_header.add_child(_create_cell(key.capitalize(), true, false))
+
+	# Display "Data Tidak Ditemukan" row if candidate list is empty
+	if candidates.is_empty():
+		var empty_panel = PanelContainer.new()
+		empty_panel.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		
+		var style = StyleBoxFlat.new()
+		style.bg_color = odd_row_color
+		style.content_margin_top = cell_margin_top * 2.0
+		style.content_margin_bottom = cell_margin_bottom * 2.0
+		style.set_corner_radius_all(corner_radius)
+		empty_panel.add_theme_stylebox_override("panel", style)
+
+		var empty_label = Label.new()
+		empty_label.text = "Data karyawan tidak ditemukan"
+		empty_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		empty_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+		empty_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		
+		empty_panel.add_child(empty_label)
+		table_rows.add_child(empty_panel)
+		return
 
 	# Rebuild data rows matching the header columns
 	for i in range(candidates.size()):

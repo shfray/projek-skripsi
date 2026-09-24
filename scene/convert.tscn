@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://da7it570i1po4"]
 
-[ext_resource type="Script" uid="uid://v8bw2uqu4akp" path="res://script/convert.gd" id="1_8ews0"]
 [ext_resource type="PackedScene" uid="uid://dlq6fgnm68muy" path="res://scene/ui.tscn" id="2_6n0sv"]
 
 [node name="UI" type="Control" unique_id=113963375]
@@ -8,7 +7,6 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 241.0
 offset_bottom = 44.0
-script = ExtResource("1_8ews0")
 
 [node name="Capture" type="SubViewportContainer" parent="." unique_id=1836298022]
 layout_mode = 0

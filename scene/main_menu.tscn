@@ -29,7 +29,7 @@ layout_mode = 2
 [node name="MarginContainer2" type="MarginContainer" parent="PanelContainer/VBoxContainer" unique_id=1190382958]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 4.09
+size_flags_stretch_ratio = 1.59
 
 [node name="TextureRect" type="TextureRect" parent="PanelContainer/VBoxContainer" unique_id=1258122917]
 layout_mode = 2
@@ -56,12 +56,12 @@ size_flags_stretch_ratio = 1.44
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Button" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=1599873815]
+[node name="NewFile" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=1599873815]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "new file"
 
-[node name="Button2" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=122290960]
+[node name="OpenFile" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=122290960]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "open file"

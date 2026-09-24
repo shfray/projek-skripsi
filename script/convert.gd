@@ -1,49 +1,10 @@
 extends Control
-
-# ------------------------
-# Node references
-# ------------------------
-
-@onready var save_button: Button = $SaveButton
-@onready var capture_viewport: SubViewport = $Capture/SubViewport
-
+class_name ConvertFile
 # ------------------------
 # Constants
 # ------------------------
 
 const PYTHON_SCRIPT := "res://python/common/png_to_PDF.py"
-
-# ------------------------
-# Lifecycle
-# ------------------------
-
-func _ready() -> void:
-	save_button.pressed.connect(_on_save_pressed)
-
-# ------------------------
-# Button callback
-# ------------------------
-
-func _on_save_pressed() -> void:
-	# Ensure SubViewport has rendered
-	await get_tree().process_frame
-	await get_tree().process_frame
-
-	var png_path := ProjectSettings.globalize_path("user://scene.png")
-	var pdf_path := ProjectSettings.globalize_path("user://scene.pdf")
-
-	save_scene_png(png_path)
-	run_python_converter(png_path, pdf_path)
-
-# ------------------------
-# Capture SubViewport → PNG
-# ------------------------
-
-func save_scene_png(png_path: String) -> void:
-	var texture: Texture2D = capture_viewport.get_texture()
-	var image: Image = texture.get_image()
-	image.save_png(png_path)
-
 # ------------------------
 # Python execution
 # ------------------------
