@@ -9,4 +9,3 @@ pr:
 2. cari font buat template export csv
 3. cari font theme
 4. benerin backend
-5. 

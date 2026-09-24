@@ -3444,6 +3444,7 @@ Button/colors/icon_hover_pressed_color = Color(0.96862745, 0.98039216, 1, 1)
 Button/colors/icon_normal_color = Color(0.78431374, 0.8235294, 0.8784314, 1)
 Button/colors/icon_pressed_color = Color(0.96862745, 0.98039216, 1, 1)
 Button/constants/h_separation = 8
+Button/icons/icon = null
 Button/styles/disabled = SubResource("StyleBoxFlat_4rfoy")
 Button/styles/focus = SubResource("StyleBoxFlat_2swmo")
 Button/styles/hover = SubResource("StyleBoxFlat_jnb85")
