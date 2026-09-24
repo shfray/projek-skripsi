@@ -45,9 +45,14 @@ func load_and_display_data() -> void:
 	var dir = DirAccess.open("res://resources/")
 	if dir:
 		for f in dir.get_files():
-			if f.ends_with(".tres"):
-				var res = ResourceLoader.load("res://resources/".path_join(f)) as CandidateData
-				if res: all_candidates.append(res)
+			# In standalone builds, Godot appends .remap to resource files
+			var clean_filename = f.trim_suffix(".remap")
+			
+			if clean_filename.ends_with(".tres"):
+				var res_path = "res://resources/".path_join(clean_filename)
+				var res = ResourceLoader.load(res_path) as CandidateData
+				if res:
+					all_candidates.append(res)
 				
 	populate_table(all_candidates)
 
