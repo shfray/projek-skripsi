@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://b00sa274qoatx"]
 
+[ext_resource type="Theme" uid="uid://djws7bmoe8i72" path="res://clean_dark.tres" id="1_04qq3"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_enlf3"]
+
 [node name="Kriteria" type="VBoxContainer" unique_id=272663464]
 anchors_preset = 15
 anchor_right = 1.0
@@ -42,57 +46,134 @@ size_flags_stretch_ratio = 0.2
 layout_mode = 2
 size_flags_horizontal = 3
 
+[node name="VBoxContainer" type="VBoxContainer" parent="StatistikKriteria/PanelContainer" unique_id=1375737231]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="StatistikKriteria/PanelContainer/VBoxContainer" unique_id=76079818]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Total Kriteria"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="StatistikKriteria/PanelContainer/VBoxContainer" unique_id=1391570213]
+layout_mode = 2
+size_flags_vertical = 6
+text = "0"
+horizontal_alignment = 1
+
 [node name="PanelContainer2" type="PanelContainer" parent="StatistikKriteria" unique_id=1811606699]
 layout_mode = 2
 size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StatistikKriteria/PanelContainer2" unique_id=405244963]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="StatistikKriteria/PanelContainer2/VBoxContainer" unique_id=810405928]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Kriteria Positif"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="StatistikKriteria/PanelContainer2/VBoxContainer" unique_id=2058794762]
+layout_mode = 2
+size_flags_vertical = 6
+text = "0"
+horizontal_alignment = 1
 
 [node name="PanelContainer3" type="PanelContainer" parent="StatistikKriteria" unique_id=1756398646]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="TabelDataKriteria&Bobot" type="HBoxContainer" parent="." unique_id=1080932907]
+[node name="VBoxContainer" type="VBoxContainer" parent="StatistikKriteria/PanelContainer3" unique_id=1153637162]
 layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.15
 
-[node name="PanelContainer" type="PanelContainer" parent="TabelDataKriteria&Bobot" unique_id=1229885535]
+[node name="Label" type="Label" parent="StatistikKriteria/PanelContainer3/VBoxContainer" unique_id=1979816587]
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "Kriteria Negatif"
+horizontal_alignment = 1
 
-[node name="PanelContainer2" type="PanelContainer" parent="TabelDataKriteria&Bobot" unique_id=64915321]
+[node name="Label2" type="Label" parent="StatistikKriteria/PanelContainer3/VBoxContainer" unique_id=1104076011]
 layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="PanelContainer3" type="PanelContainer" parent="TabelDataKriteria&Bobot" unique_id=1837820457]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="PanelContainer4" type="PanelContainer" parent="TabelDataKriteria&Bobot" unique_id=900929692]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="PanelContainer5" type="PanelContainer" parent="TabelDataKriteria&Bobot" unique_id=831755573]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="PanelContainer6" type="PanelContainer" parent="TabelDataKriteria&Bobot" unique_id=1212580305]
-layout_mode = 2
-size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "0"
+horizontal_alignment = 1
 
 [node name="Kriteria&Bobot" type="ScrollContainer" parent="." unique_id=2048383698]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 0.58
+size_flags_stretch_ratio = 1.24
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Kriteria&Bobot" unique_id=2083571460]
+[node name="TableRows" type="VBoxContainer" parent="Kriteria&Bobot" unique_id=1765460794]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme = ExtResource("1_04qq3")
+
+[node name="TableHeader" type="HBoxContainer" parent="Kriteria&Bobot/TableRows" unique_id=1223783640]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_04qq3")
+
+[node name="PanelContainer" type="PanelContainer" parent="Kriteria&Bobot/TableRows/TableHeader" unique_id=49760940]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_enlf3")
+
+[node name="ID" type="Label" parent="Kriteria&Bobot/TableRows/TableHeader/PanelContainer" unique_id=1000271043]
+layout_mode = 2
+text = "Kode"
+horizontal_alignment = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="Kriteria&Bobot/TableRows/TableHeader" unique_id=738304597]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_enlf3")
+
+[node name="NamaKaryawan" type="Label" parent="Kriteria&Bobot/TableRows/TableHeader/PanelContainer2" unique_id=1704246982]
+layout_mode = 2
+text = "Nama Kriteria"
+horizontal_alignment = 1
+
+[node name="PanelContainer3" type="PanelContainer" parent="Kriteria&Bobot/TableRows/TableHeader" unique_id=1714000937]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_enlf3")
+
+[node name="DivisiDapur" type="Label" parent="Kriteria&Bobot/TableRows/TableHeader/PanelContainer3" unique_id=42159782]
+layout_mode = 2
+text = "Keterangan"
+horizontal_alignment = 1
+
+[node name="PanelContainer4" type="PanelContainer" parent="Kriteria&Bobot/TableRows/TableHeader" unique_id=1275927748]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_enlf3")
+
+[node name="DivisiPelayanan" type="Label" parent="Kriteria&Bobot/TableRows/TableHeader/PanelContainer4" unique_id=2050430677]
+layout_mode = 2
+text = "Atribut"
+horizontal_alignment = 1
+
+[node name="PanelContainer5" type="PanelContainer" parent="Kriteria&Bobot/TableRows/TableHeader" unique_id=2010421789]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_enlf3")
+
+[node name="DivisiDistribusi" type="Label" parent="Kriteria&Bobot/TableRows/TableHeader/PanelContainer5" unique_id=278849262]
+layout_mode = 2
+text = "Bobot"
+horizontal_alignment = 1
 
 [node name="TombolAksi" type="HBoxContainer" parent="." unique_id=90190795]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.15
+
+[node name="MarginContainer2" type="MarginContainer" parent="TombolAksi" unique_id=1747488072]
+layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="TombolTambahKriteria" type="Button" parent="TombolAksi" unique_id=1952039117]
 layout_mode = 2
@@ -100,7 +181,3 @@ size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.5
 theme_override_font_sizes/font_size = 20
 text = "Tambah Kriteria Baru"
-
-[node name="MarginContainer2" type="MarginContainer" parent="TombolAksi" unique_id=1747488072]
-layout_mode = 2
-size_flags_horizontal = 3
