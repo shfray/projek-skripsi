@@ -1,5 +1,13 @@
 [gd_scene format=3 uid="uid://34mdh4i7s2g7"]
 
+[ext_resource type="Texture2D" uid="uid://ck0fk1futa6x1" path="res://ui icon assets/add-user.png" id="1_plyey"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n44kp"]
+corner_radius_top_left = 120
+corner_radius_top_right = 120
+corner_radius_bottom_right = 120
+corner_radius_bottom_left = 120
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ax0f2"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_plyey"]
@@ -21,13 +29,17 @@ size_flags_vertical = 3
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="ColorRect" type="PanelContainer" parent="HeaderCard" unique_id=168646232]
+[node name="ProfileFrame" type="PanelContainer" parent="HeaderCard" unique_id=168646232]
+clip_children = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.34
+theme_override_styles/panel = SubResource("StyleBoxFlat_n44kp")
 
-[node name="FotoProfil" type="TextureRect" parent="HeaderCard/ColorRect" unique_id=1557029754]
+[node name="FotoProfil" type="TextureRect" parent="HeaderCard/ProfileFrame" unique_id=1557029754]
 layout_mode = 2
+texture = ExtResource("1_plyey")
+expand_mode = 2
 
 [node name="ColorRect2" type="VBoxContainer" parent="HeaderCard" unique_id=566872886]
 layout_mode = 2
