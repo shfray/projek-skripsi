@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CandidateData" format=3]
+
+[ext_resource type="Script" path="res://script/candidate_data.gd" id="1_wt6b4"]
+
+[resource]
+script = ExtResource("1_wt6b4")
+id = "A34"
+nama = "Intan"
+criteria = {
+"c1 (tes tulis)": 100.0,
+"c2 (wawancara)": 78.0,
+"c3 (terlambat)": 1.0,
+"c4(kerja sama)": 96.0
+}

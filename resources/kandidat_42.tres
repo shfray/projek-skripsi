@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CandidateData" format=3]
+
+[ext_resource type="Script" path="res://script/candidate_data.gd" id="1_0r7p8"]
+
+[resource]
+script = ExtResource("1_0r7p8")
+id = "A42"
+nama = "Rani"
+criteria = {
+"c1 (tes tulis)": 79.0,
+"c2 (wawancara)": 82.0,
+"c3 (terlambat)": 1.0,
+"c4(kerja sama)": 63.0
+}

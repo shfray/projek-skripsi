@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CandidateData" format=3]
+
+[ext_resource type="Script" path="res://script/candidate_data.gd" id="1_dc7le"]
+
+[resource]
+script = ExtResource("1_dc7le")
+id = "A48"
+nama = "Dimas"
+criteria = {
+"c1 (tes tulis)": 63.0,
+"c2 (wawancara)": 76.0,
+"c3 (terlambat)": 3.0,
+"c4(kerja sama)": 92.0
+}

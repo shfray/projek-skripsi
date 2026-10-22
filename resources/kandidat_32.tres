@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CandidateData" format=3]
+
+[ext_resource type="Script" path="res://script/candidate_data.gd" id="1_b1jl2"]
+
+[resource]
+script = ExtResource("1_b1jl2")
+id = "A32"
+nama = "Galih"
+criteria = {
+"c1 (tes tulis)": 92.0,
+"c2 (wawancara)": 71.0,
+"c3 (terlambat)": 4.0,
+"c4(kerja sama)": 83.0
+}

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CandidateData" format=3]
+
+[ext_resource type="Script" path="res://script/candidate_data.gd" id="1_fkxc4"]
+
+[resource]
+script = ExtResource("1_fkxc4")
+id = "A27"
+nama = "Bella"
+criteria = {
+"c1 (tes tulis)": 60.0,
+"c2 (wawancara)": 87.0,
+"c3 (terlambat)": 1.0,
+"c4(kerja sama)": 85.0
+}

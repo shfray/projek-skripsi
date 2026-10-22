@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CandidateData" format=3]
+
+[ext_resource type="Script" path="res://script/candidate_data.gd" id="1_aivb6"]
+
+[resource]
+script = ExtResource("1_aivb6")
+id = "A31"
+nama = "Farah"
+criteria = {
+"c1 (tes tulis)": 65.0,
+"c2 (wawancara)": 61.0,
+"c3 (terlambat)": 2.0,
+"c4(kerja sama)": 96.0
+}

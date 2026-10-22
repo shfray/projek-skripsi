@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://005ragvgu831"
+
+[deps]
+
+files=["res://csv/Dummy_Data_Pemilihan_Karyawan_SAW.nama.translation", "res://csv/Dummy_Data_Pemilihan_Karyawan_SAW.C1 (Tes Tulis).translation", "res://csv/Dummy_Data_Pemilihan_Karyawan_SAW.C2 (Wawancara).translation", "res://csv/Dummy_Data_Pemilihan_Karyawan_SAW.C3 (Terlambat).translation", "res://csv/Dummy_Data_Pemilihan_Karyawan_SAW.C4(kerja sama).translation"]
+
+source_file="res://csv/Dummy_Data_Pemilihan_Karyawan_SAW.csv"
+dest_files=["res://csv/Dummy_Data_Pemilihan_Karyawan_SAW.nama.translation", "res://csv/Dummy_Data_Pemilihan_Karyawan_SAW.C1 (Tes Tulis).translation", "res://csv/Dummy_Data_Pemilihan_Karyawan_SAW.C2 (Wawancara).translation", "res://csv/Dummy_Data_Pemilihan_Karyawan_SAW.C3 (Terlambat).translation", "res://csv/Dummy_Data_Pemilihan_Karyawan_SAW.C4(kerja sama).translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

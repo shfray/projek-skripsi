@@ -26,35 +26,67 @@ func _ready() -> void:
 
 func _setup_file_dialog() -> void:
 	file_dialog = FileDialog.new()
+	file_dialog.title = "Pilih File Data Karyawan"
 	file_dialog.file_mode = FileDialog.FILE_MODE_OPEN_FILE
 	file_dialog.access = FileDialog.ACCESS_FILESYSTEM
-	file_dialog.filters = PackedStringArray(["*.csv ; CSV Files"])
-	file_dialog.file_selected.connect(_on_csv_selected)
+	file_dialog.filters = PackedStringArray([
+		"*.csv ; CSV Files (*.csv)",
+		"*.xlsx ; Excel Workbook (*.xlsx)",
+		"*.tres ; Resource Files (*.tres)",
+		"*.json ; JSON Files (*.json)"
+	])
+	# Enable OS native picker if running Godot 4.2+
+	file_dialog.use_native_dialog = true
+	file_dialog.file_selected.connect(_on_file_selected)
 	add_child(file_dialog)
 
 func _on_tambah_data_pressed() -> void:
 	file_dialog.popup_centered(Vector2i(700, 500))
 
-func _on_csv_selected(path: String) -> void:
-	var converter = CsvConverter.new()
-	if converter.import_from_path(path):
-		load_and_display_data()
+func _on_file_selected(path: String) -> void:
+	var ext = path.get_extension().to_lower()
+	match ext:
+		"csv":
+			var converter = CsvConverter.new()
+			if converter.import_from_path(path):
+				load_and_display_data()
+		"xlsx":
+			var csv_path := "user://xlsx_import.csv"
+			var xlsx_importer := XlsxImporter.new()
+			if xlsx_importer.convert_to_csv(path, csv_path):
+				var converter := CsvConverter.new()
+				if converter.import_from_path(csv_path):
+					load_and_display_data()
+		"tres":
+			var res = ResourceLoader.load(path) as CandidateData
+			if res:
+				all_candidates.append(res)
+				populate_table(all_candidates)
+		_:
+			push_warning("Format file tidak didukung: " + ext)
 
 func load_and_display_data() -> void:
-	all_candidates.clear()
-	var dir = DirAccess.open("res://resources/")
-	if dir:
-		for f in dir.get_files():
-			# In standalone builds, Godot appends .remap to resource files
-			var clean_filename = f.trim_suffix(".remap")
-			
-			if clean_filename.ends_with(".tres"):
-				var res_path = "res://resources/".path_join(clean_filename)
-				var res = ResourceLoader.load(res_path) as CandidateData
-				if res:
-					all_candidates.append(res)
-				
+	if not ProjectManager.active_project_dir.is_empty():
+		var project_resources_dir := ProjectManager.get_active_candidate_resources_dir()
+		all_candidates = _load_candidates_from_folder(project_resources_dir)
+	else:
+		all_candidates = _load_candidates_from_folder("user://resources/")
+		if all_candidates.is_empty():
+			all_candidates = _load_candidates_from_folder("res://resources/")
 	populate_table(all_candidates)
+
+func _load_candidates_from_folder(folder_path: String) -> Array[CandidateData]:
+	var candidates: Array[CandidateData] = []
+	var dir = DirAccess.open(folder_path)
+	if dir:
+		for file_name in dir.get_files():
+			var clean_filename = file_name.trim_suffix(".remap")
+			if clean_filename.ends_with(".tres"):
+				var resource_path = folder_path.path_join(clean_filename)
+				var candidate = ResourceLoader.load(resource_path) as CandidateData
+				if candidate:
+					candidates.append(candidate)
+	return candidates
 
 func _on_search_text_changed() -> void:
 	var query = search_box.text.strip_edges().to_lower()
@@ -63,11 +95,28 @@ func _on_search_text_changed() -> void:
 		populate_table(all_candidates)
 		return
 		
-	var filtered_candidates: Array[CandidateData] = []
+	var first_word_matches: Array[CandidateData] = []
+	var secondary_word_matches: Array[CandidateData] = []
+	
 	for c in all_candidates:
-		if query in c.nama.to_lower():
-			filtered_candidates.append(c)
-			
+		var name_lower = c.nama.to_lower()
+		
+		# Priority 1: First word starts with the query (e.g. "an" matches "Andi")
+		if name_lower.begins_with(query):
+			first_word_matches.append(c)
+		else:
+			# Priority 2: A secondary word starts with the query (e.g. "nur" matches "Andi Nurdin")
+			var words = name_lower.split(" ", false)
+			for i in range(1, words.size()):
+				if words[i].begins_with(query):
+					secondary_word_matches.append(c)
+					break
+
+	# Combine first-word matches first, followed by secondary-word matches
+	var filtered_candidates: Array[CandidateData] = []
+	filtered_candidates.append_array(first_word_matches)
+	filtered_candidates.append_array(secondary_word_matches)
+	
 	populate_table(filtered_candidates)
 
 func populate_table(candidates: Array[CandidateData]) -> void:

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CandidateData" format=3]
+
+[ext_resource type="Script" path="res://script/candidate_data.gd" id="1_7557d"]
+
+[resource]
+script = ExtResource("1_7557d")
+id = "A39"
+nama = "Oki"
+criteria = {
+"c1 (tes tulis)": 69.0,
+"c2 (wawancara)": 99.0,
+"c3 (terlambat)": 2.0,
+"c4(kerja sama)": 84.0
+}

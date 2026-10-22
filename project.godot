@@ -19,6 +19,10 @@ run/main_scene="uid://b6ii41h6xhmyb"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+ProjectManager="*res://script/project_manager.gd"
+
 [display]
 
 window/size/mode=2

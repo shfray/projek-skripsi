@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CandidateData" format=3]
+
+[ext_resource type="Script" path="res://script/candidate_data.gd" id="1_qmfd1"]
+
+[resource]
+script = ExtResource("1_qmfd1")
+id = "A17"
+nama = "Putri"
+criteria = {
+"c1 (tes tulis)": 73.0,
+"c2 (wawancara)": 90.0,
+"c3 (terlambat)": 0.0,
+"c4(kerja sama)": 89.0
+}

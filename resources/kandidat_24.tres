@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CandidateData" format=3]
+
+[ext_resource type="Script" path="res://script/candidate_data.gd" id="1_n2h24"]
+
+[resource]
+script = ExtResource("1_n2h24")
+id = "A24"
+nama = "Yuni"
+criteria = {
+"c1 (tes tulis)": 79.0,
+"c2 (wawancara)": 68.0,
+"c3 (terlambat)": 3.0,
+"c4(kerja sama)": 90.0
+}

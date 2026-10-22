@@ -36,6 +36,7 @@ shadow_color = Color(1, 1, 1, 0)
 shadow_offset = Vector2(0, 4)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4rfoy"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2swmo"]
 content_margin_left = 0.0
@@ -3431,13 +3432,10 @@ AcceptDialog/constants/buttons_separation = 12
 AcceptDialog/styles/panel = SubResource("StyleBoxFlat_i5jf3")
 BadgePanel/base_type = &"PanelContainer"
 BadgePanel/styles/panel = SubResource("StyleBoxFlat_g2sdt")
-Button/colors/font_color = Color(0.96862745, 0.98039216, 1, 1)
-Button/colors/font_disabled_color = Color(0.56078434, 0.6117647, 0.6784314, 1)
-Button/colors/font_focus_color = Color(0.96862745, 0.98039216, 1, 1)
-Button/colors/font_hover_color = Color(0.96862745, 0.98039216, 1, 1)
-Button/colors/font_hover_pressed_color = Color(0.96862745, 0.98039216, 1, 1)
+Button/colors/font_disabled_color = Color(0.99607843, 0.99607843, 0.99607843, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
 Button/colors/font_pressed_color = Color(0.96862745, 0.98039216, 1, 1)
-Button/colors/icon_disabled_color = Color(0.56078434, 0.6117647, 0.6784314, 1)
+Button/colors/icon_disabled_color = Color(0.05764687, 0.3620707, 0.40364593, 1)
 Button/colors/icon_focus_color = Color(0.96862745, 0.98039216, 1, 1)
 Button/colors/icon_hover_color = Color(0.96862745, 0.98039216, 1, 1)
 Button/colors/icon_hover_pressed_color = Color(0.96862745, 0.98039216, 1, 1)

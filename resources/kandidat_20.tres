@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CandidateData" format=3]
+
+[ext_resource type="Script" path="res://script/candidate_data.gd" id="1_oeama"]
+
+[resource]
+script = ExtResource("1_oeama")
+id = "A20"
+nama = "Tono"
+criteria = {
+"c1 (tes tulis)": 79.0,
+"c2 (wawancara)": 62.0,
+"c3 (terlambat)": 0.0,
+"c4(kerja sama)": 84.0
+}

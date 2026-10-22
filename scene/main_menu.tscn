@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://qgocegug7pn1"]
 
+[ext_resource type="Script" path="res://script/main_menu.gd" id="1_controller"]
 [ext_resource type="PackedScene" uid="uid://chhim41nety1s" path="res://scene/welcome_screen.tscn" id="1_3er1b"]
 [ext_resource type="PackedScene" uid="uid://fe4sof8s31cw" path="res://scene/file_selector.tscn" id="2_hxu56"]
 
@@ -12,6 +13,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("1_controller")
 
 [node name="WelcomeScreen" parent="." unique_id=945208214 instance=ExtResource("1_3er1b")]
 layout_mode = 1

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CandidateData" format=3]
+
+[ext_resource type="Script" path="res://script/candidate_data.gd" id="1_xde0p"]
+
+[resource]
+script = ExtResource("1_xde0p")
+id = "A16"
+nama = "Oscar"
+criteria = {
+"c1 (tes tulis)": 94.0,
+"c2 (wawancara)": 62.0,
+"c3 (terlambat)": 7.0,
+"c4(kerja sama)": 95.0
+}

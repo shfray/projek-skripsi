@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CandidateData" format=3]
+
+[ext_resource type="Script" path="res://script/candidate_data.gd" id="1_xs8d5"]
+
+[resource]
+script = ExtResource("1_xs8d5")
+id = "A12"
+nama = "Kartika"
+criteria = {
+"c1 (tes tulis)": 85.0,
+"c2 (wawancara)": 71.0,
+"c3 (terlambat)": 0.0,
+"c4(kerja sama)": 62.0
+}

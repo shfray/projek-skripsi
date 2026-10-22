@@ -2,10 +2,18 @@ extends Node
 class_name SawCalculator
 
 const RESOURCE_FOLDER = "res://resources/"
+const USER_RESOURCE_FOLDER = "user://resources/"
 
 ## Menjalankan kalkulasi SAW dan mengembalikan Array terurut dari peringkat tertinggi
 func calculate_from_resources(custom_weights: Dictionary = {}, custom_types: Dictionary = {}) -> Array[Dictionary]:
-	var candidates = load_all_resources(RESOURCE_FOLDER)
+	var candidates: Array[CandidateData] = []
+	if not ProjectManager.active_project_dir.is_empty():
+		var project_resources_dir := ProjectManager.get_active_candidate_resources_dir()
+		candidates = load_all_resources(project_resources_dir)
+	else:
+		candidates = load_all_resources(USER_RESOURCE_FOLDER)
+		if candidates.is_empty():
+			candidates = load_all_resources(RESOURCE_FOLDER)
 	if candidates.is_empty():
 		push_warning("SawCalculator: Tidak ada file CandidateData (.tres) ditemukan.")
 		return []
