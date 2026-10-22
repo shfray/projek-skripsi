@@ -28,6 +28,11 @@ text = "Back"
 layout_mode = 2
 size_flags_horizontal = 3
 
+[node name="Status" type="Label" parent="VBoxContainer" unique_id=868223445]
+layout_mode = 2
+text = "Searching for saved projects..."
+horizontal_alignment = 1
+
 [node name="ProjectScroll" type="ScrollContainer" parent="VBoxContainer" unique_id=1198371593]
 layout_mode = 2
 size_flags_vertical = 3
